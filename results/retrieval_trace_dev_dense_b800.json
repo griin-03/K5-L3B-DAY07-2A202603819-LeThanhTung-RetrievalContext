@@ -1,0 +1,1200 @@
+[
+  {
+    "query_id": "Q01",
+    "split": "dev",
+    "question": "What is tokenization and what are its common token units in LLM training?",
+    "strategy": "dense_b800",
+    "top_k": 3,
+    "budget_chars": 800,
+    "gold": [
+      {
+        "source_id": "llm_survey_2024",
+        "page": 4,
+        "evidence": "Tokenization [59] is an essential pre-processing step in\nLLM training that parses the text into non-decomposing units\ncalled tokens. Tokens can be characters, subwords [60], symbols [61], or words"
+      }
+    ],
+    "results": [
+      {
+        "id": "para_llm_survey_2024_p4_0",
+        "source_id": "llm_survey_2024",
+        "source": "llm_survey.pdf",
+        "page": 4,
+        "text": "2. Background\nWe provide the relevant background to understand the fundamentals related to LLMs in this section. We briefly discuss\nnecessary components in LLMs and refer the readers interested\nin details to the original works. 2.1. Tokenization\nTokenization [59] is an essential pre-processing step in\nLLM training that parses the text into non-decomposing units\ncalled tokens. Tokens can be characters, subwords [60], symbols [61], or words, depending on the tokenization process. Some of the commonly used tokenization schemes in LLMs\ninclude wordpiece [62], byte pair encoding (BPE) [61], and unigramLM [60]. Readers are encouraged to refer to [63] for a\ndetailed survey. 2.2. Encoding Positions\nThe transformer processes input sequences in parallel and\nindependently of each other.",
+        "metadata": {
+          "strategy": "paragraph",
+          "document_id": "llm_survey_2024",
+          "page": 4,
+          "chunk_size": 786,
+          "section": "2. Background",
+          "source": "llm_survey.pdf"
+        },
+        "score": 0.8976835608482361,
+        "strategy": "dense",
+        "hit": true
+      },
+      {
+        "id": "para_llm_survey_2024_p19_5",
+        "source_id": "llm_survey_2024",
+        "source": "llm_survey.pdf",
+        "page": 19,
+        "text": "ToolkenGPT [220] uses tools as tokens by concatenating tool embeddings with other token embeddings. During\ninference, the LLM generates the tool tokens representing the\ntool call, stops text generation, and restarts using the tool execution output. Training with Tool Augmentation: LLMs are trained to interact with diverse tools, enhancing planning abilities to overcome\nthe limitations of zero-shot tool augmentation [221, 27, 222,\n223]. Gorilla [221] instruction-tunes LLaMA with information\nretrieval from API documentation. It uses the self-instruct [19]\ndata generation pipeline with GPT-4 by providing in-context\nexamples retrieved from API documentation.",
+        "metadata": {
+          "section": "3. Large Language Models",
+          "chunk_size": 662,
+          "source": "llm_survey.pdf",
+          "page": 19,
+          "document_id": "llm_survey_2024",
+          "strategy": "paragraph"
+        },
+        "score": 0.780539333820343,
+        "strategy": "dense",
+        "hit": false
+      },
+      {
+        "id": "para_llm_survey_2024_p11_8",
+        "source_id": "llm_survey_2024",
+        "source": "llm_survey.pdf",
+        "page": 11,
+        "text": "However, because they are generally trained with\nthe objective of next token prediction, LLMs have limited capacity to follow user intent and are prone to generate unethical,\ntoxic or inaccurate responses [20]. For their effective utilization, LLMs are fine-tuned to follow instructions [16, 17, 97] and\ngenerate safe responses [20], which also results in increasing\nzero-shot, few-shot, and cross-task generalization [97, 16, 18],\nwith minimal compute increment, e.g., 0.2% of the total pretraining for PaLM 540B [16]. We review various fine-tuned LLMs and strategies for effective\nfine-tuning in this section. 11",
+        "metadata": {
+          "section": "3. Large Language Models",
+          "source": "llm_survey.pdf",
+          "chunk_size": 614,
+          "strategy": "paragraph",
+          "document_id": "llm_survey_2024",
+          "page": 11
+        },
+        "score": 0.7779334783554077,
+        "strategy": "dense",
+        "hit": false
+      }
+    ],
+    "context": "[para_llm_survey_2024_p19_5 | llm_survey.pdf | page 19]\nToolkenGPT [220] uses tools as tokens by concatenating tool embeddings with other token embeddings. During\ninference, the LLM generates the tool tokens representing the\ntool call, stops text generation, and restarts using the tool execution output. Training with Tool Augmentation: LLMs are trained to interact with diverse tools, enhancing planning abilities to overcome\nthe limitations of zero-shot tool augmentation [221, 27, 222,\n223]. Gorilla [221] instruction-tunes LLaMA with information\nretrieval from API documentation. It uses the self-instruct [19]\ndata generation pipeline with GPT-4 by providing in-context\nexamples retrieved from API documentation.",
+    "context_ids": [
+      "para_llm_survey_2024_p19_5"
+    ],
+    "context_chars": 718,
+    "elapsed_ms": 22.976791000019148,
+    "hit1": true,
+    "hit3": true,
+    "context_hit": false
+  },
+  {
+    "query_id": "Q02",
+    "split": "dev",
+    "question": "How does the Alibi positional embedding scheme work?",
+    "strategy": "dense_b800",
+    "top_k": 3,
+    "budget_chars": 800,
+    "gold": [
+      {
+        "source_id": "llm_survey_2024",
+        "page": 4,
+        "evidence": "Alibi [65]: It subtracts a scalar bias from the attention score\nthat increases with the distance between token positions. This\nfavors using recent tokens for attention."
+      }
+    ],
+    "results": [
+      {
+        "id": "para_llm_survey_2024_p4_1",
+        "source_id": "llm_survey_2024",
+        "source": "llm_survey.pdf",
+        "page": 4,
+        "text": "Moreover, the attention module in the transformer does not capture positional information. As a result, positional encodings were introduced in transformer [64], where a positional embedding vector is added to\nthe token embedding. Variants of positional embedding include\nabsolute, relative, or learned positional encodings. Within relative encoding, Alibi and RoPE are two widely used positional\nembeddings in LLMs. Alibi [65]: It subtracts a scalar bias from the attention score\nthat increases with the distance between token positions. This\nfavors using recent tokens for attention.",
+        "metadata": {
+          "strategy": "paragraph",
+          "chunk_size": 585,
+          "source": "llm_survey.pdf",
+          "document_id": "llm_survey_2024",
+          "page": 4,
+          "section": "2. Background"
+        },
+        "score": 0.8422744274139404,
+        "strategy": "dense",
+        "hit": true
+      },
+      {
+        "id": "para_llm_survey_2024_p17_7",
+        "source_id": "llm_survey_2024",
+        "source": "llm_survey.pdf",
+        "page": 17,
+        "text": "A model\ntrained on limited sequence lengths fails to generalize to unseen\nlengths at inference time [186, 49]. Alternatively, LLMs with\nALiBi [65] positional encodings can perform zero-shot length\nextrapolation. However, ALiBi has less expressive power [66]\nand inferior performance on multiple benchmarks [46], and\nmany LLMs use RoPE positional embedding that is unable to\nperform zero-shot extrapolation. A larger context length has\nbenefits such as a better understanding of longer documents,\nmore samples in in-context learning, execution of bigger reasoning processes, etc. Expanding context length during finetuning is slow, inefficient, and computationally expensive [49]. Therefore, researchers employ various context window extrapolation techniques discussed below.",
+        "metadata": {
+          "source": "llm_survey.pdf",
+          "chunk_size": 774,
+          "page": 17,
+          "document_id": "llm_survey_2024",
+          "strategy": "paragraph",
+          "section": "3. Large Language Models"
+        },
+        "score": 0.7723471522331238,
+        "strategy": "dense",
+        "hit": false
+      },
+      {
+        "id": "para_llm_survey_2024_p23_4",
+        "source_id": "llm_survey_2024",
+        "source": "llm_survey.pdf",
+        "page": 23,
+        "text": "However, another\nstudy [33] finds that pre-norm degrades fine-tuned model performance as compared to post-norm, and there are no stability\nbenefits of pre-norm beyond the 100B scale. Therefore, GLM130B [33] used deep-norm which is a variant of post-norm for\nbetter downstream task performance after fine-tuning. Positional Encoding: Like other building blocks of the model,\npositional encoding also affects the performance and training\nstability of LLMs. BLOOM [13] finds ALiBi outperforms\nlearned and rotary positional encodings. Contrary to this,\nGLM-130B [33] identifies rotary positional encoding as being\nbetter than ALiBi. So, there is no conclusion in the literature\nabout positional encodings yet.",
+        "metadata": {
+          "section": "3. Large Language Models",
+          "document_id": "llm_survey_2024",
+          "source": "llm_survey.pdf",
+          "page": 23,
+          "strategy": "paragraph",
+          "chunk_size": 705
+        },
+        "score": 0.7525695562362671,
+        "strategy": "dense",
+        "hit": false
+      }
+    ],
+    "context": "[para_llm_survey_2024_p4_1 | llm_survey.pdf | page 4]\nMoreover, the attention module in the transformer does not capture positional information. As a result, positional encodings were introduced in transformer [64], where a positional embedding vector is added to\nthe token embedding. Variants of positional embedding include\nabsolute, relative, or learned positional encodings. Within relative encoding, Alibi and RoPE are two widely used positional\nembeddings in LLMs. Alibi [65]: It subtracts a scalar bias from the attention score\nthat increases with the distance between token positions. This\nfavors using recent tokens for attention.",
+    "context_ids": [
+      "para_llm_survey_2024_p4_1"
+    ],
+    "context_chars": 639,
+    "elapsed_ms": 5.5499170000530285,
+    "hit1": true,
+    "hit3": true,
+    "context_hit": true
+  },
+  {
+    "query_id": "Q03",
+    "split": "dev",
+    "question": "How does Rotary Position Embedding (RoPE) encode relative position?",
+    "strategy": "dense_b800",
+    "top_k": 3,
+    "budget_chars": 800,
+    "gold": [
+      {
+        "source_id": "llm_survey_2024",
+        "page": 4,
+        "evidence": "RoPE [66]: It rotates query and key representations at an angle proportional to the token absolute position in the input\nsequence, resulting in a relative positional encoding scheme"
+      }
+    ],
+    "results": [
+      {
+        "id": "para_llm_survey_2024_p4_1",
+        "source_id": "llm_survey_2024",
+        "source": "llm_survey.pdf",
+        "page": 4,
+        "text": "Moreover, the attention module in the transformer does not capture positional information. As a result, positional encodings were introduced in transformer [64], where a positional embedding vector is added to\nthe token embedding. Variants of positional embedding include\nabsolute, relative, or learned positional encodings. Within relative encoding, Alibi and RoPE are two widely used positional\nembeddings in LLMs. Alibi [65]: It subtracts a scalar bias from the attention score\nthat increases with the distance between token positions. This\nfavors using recent tokens for attention.",
+        "metadata": {
+          "source": "llm_survey.pdf",
+          "chunk_size": 585,
+          "section": "2. Background",
+          "strategy": "paragraph",
+          "document_id": "llm_survey_2024",
+          "page": 4
+        },
+        "score": 0.81168133020401,
+        "strategy": "dense",
+        "hit": false
+      },
+      {
+        "id": "para_llm_survey_2024_p17_8",
+        "source_id": "llm_survey_2024",
+        "source": "llm_survey.pdf",
+        "page": 17,
+        "text": "Position Interpolation: Rather than extrapolating, [49] shows\nthat interpolating position encodings within the pre-trained context window are more effective. The work demonstrates that\nonly 1000 steps of fine-tuning are enough to achieve better results on larger windows without reducing performance compared to the original context size. Giraffe [46] uses power scaling in RoPE, and YaRN [47] proposed NTK-aware interpolation. 17",
+        "metadata": {
+          "source": "llm_survey.pdf",
+          "document_id": "llm_survey_2024",
+          "page": 17,
+          "strategy": "paragraph",
+          "section": "3. Large Language Models",
+          "chunk_size": 430
+        },
+        "score": 0.7619540691375732,
+        "strategy": "dense",
+        "hit": false
+      },
+      {
+        "id": "para_llm_survey_2024_p4_2",
+        "source_id": "llm_survey_2024",
+        "source": "llm_survey.pdf",
+        "page": 4,
+        "text": "RoPE [66]: It rotates query and key representations at an angle proportional to the token absolute position in the input\nsequence, resulting in a relative positional encoding scheme\nwhich decays with the distance between the tokens. 2.3. Attention in LLMs\nAttention assigns weights to input tokens based on importance so that the model gives more emphasis to relevant tokens. Attention in transformers [64] calculates query, key, and value\nmappings for input sequences, where the attention score is\nobtained by multiplying the query and key, and later used to\nweight values. We discuss different attention strategies used in\nLLMs below. Self-Attention [64]: Calculates attention using queries, keys,\nand values from the same block (encoder or decoder).",
+        "metadata": {
+          "document_id": "llm_survey_2024",
+          "page": 4,
+          "section": "2. Background",
+          "strategy": "paragraph",
+          "source": "llm_survey.pdf",
+          "chunk_size": 752
+        },
+        "score": 0.7315284609794617,
+        "strategy": "dense",
+        "hit": true
+      }
+    ],
+    "context": "[para_llm_survey_2024_p4_1 | llm_survey.pdf | page 4]\nMoreover, the attention module in the transformer does not capture positional information. As a result, positional encodings were introduced in transformer [64], where a positional embedding vector is added to\nthe token embedding. Variants of positional embedding include\nabsolute, relative, or learned positional encodings. Within relative encoding, Alibi and RoPE are two widely used positional\nembeddings in LLMs. Alibi [65]: It subtracts a scalar bias from the attention score\nthat increases with the distance between token positions. This\nfavors using recent tokens for attention.",
+    "context_ids": [
+      "para_llm_survey_2024_p4_1"
+    ],
+    "context_chars": 639,
+    "elapsed_ms": 5.302250000113418,
+    "hit1": false,
+    "hit3": true,
+    "context_hit": false
+  },
+  {
+    "query_id": "Q04",
+    "split": "dev",
+    "question": "What is the primary capability provided by the Transformers library in LLM workflows?",
+    "strategy": "dense_b800",
+    "top_k": 3,
+    "budget_chars": 800,
+    "gold": [
+      {
+        "source_id": "llm_survey_2024",
+        "page": 5,
+        "evidence": "Transformers [82]: The library provides access to various pretrained transformer models with APIs to train, fine-tune, infer,\nand develop custom models."
+      }
+    ],
+    "results": [
+      {
+        "id": "para_llm_survey_2024_p5_0",
+        "source_id": "llm_survey_2024",
+        "source": "llm_survey.pdf",
+        "page": 5,
+        "text": "2.7. Libraries\nSome commonly used libraries for LLMs training are:\nTransformers [82]: The library provides access to various pretrained transformer models with APIs to train, fine-tune, infer,\nand develop custom models. DeepSpeed [36]: A library for scalable distributed training and\ninference of deep learning models. Megatron-LM [80]: It provides GPU-optimized techniques for\nlarge-scale training of LLMs. JAX [83]: A Python library for high-performance numerical\ncomputing and scaleable machine learning. It can differentiate native Python and NumPy functions and execute them on\nGPUs. Colossal-AI [84]: A collection of components to write distributed deep learning models. BMTrain [81]: A library to write efficient stand-alone LLMs\ntraining code.",
+        "metadata": {
+          "source": "llm_survey.pdf",
+          "document_id": "llm_survey_2024",
+          "page": 5,
+          "strategy": "paragraph",
+          "section": "2. Background",
+          "chunk_size": 751
+        },
+        "score": 0.7840282320976257,
+        "strategy": "dense",
+        "hit": true
+      },
+      {
+        "id": "para_llm_survey_2024_p2_6",
+        "source_id": "llm_survey_2024",
+        "source": "llm_survey.pdf",
+        "page": 2,
+        "text": "Researchers have organized the\nLLMs literature in surveys [50, 51, 52, 53], and topic-specific\nsurveys in [54, 55, 56, 57, 58]. In contrast to these surveys, our\ncontribution focuses on providing a comprehensive yet concise\noverview of the general direction of LLM research. This article summarizes architectural and training details of pre-trained\nLLMs and delves deeper into the details of concepts like finetuning, multi-modal LLMs, augmented LLMs, datasets, evaluation, applications, challenges, and others to provide a selfcontained comprehensive overview. Our key contributions are\nsummarized as follows. \u2022 We present a survey on the developments in LLM research,\nproviding a concise, comprehensive overview of the direction.",
+        "metadata": {
+          "section": "1. Introduction",
+          "page": 2,
+          "chunk_size": 731,
+          "source": "llm_survey.pdf",
+          "document_id": "llm_survey_2024",
+          "strategy": "paragraph"
+        },
+        "score": 0.7656103372573853,
+        "strategy": "dense",
+        "hit": false
+      },
+      {
+        "id": "para_llm_survey_2024_p2_5",
+        "source_id": "llm_survey_2024",
+        "source": "llm_survey.pdf",
+        "page": 2,
+        "text": "The LLMs abilities to solve diverse tasks with human-level\nperformance come at the cost of slow training and inference,\nextensive hardware requirements, and higher running costs. Such requirements have limited their adoption and opened up\nopportunities to devise better architectures [15, 33, 34, 35]\nand training strategies [36, 37, 21, 38, 39, 40, 41]. Parameter efficient tuning [38, 41, 40], pruning [42, 43], quantization [44, 45], knowledge distillation, and context length interpolation [46, 47, 48, 49] among others are some of the methods\nwidely studied for efficient LLM utilization. Due to the success of LLMs on a wide variety of tasks, the\nresearch literature has recently experienced a large influx of\nLLM-related contributions.",
+        "metadata": {
+          "document_id": "llm_survey_2024",
+          "source": "llm_survey.pdf",
+          "section": "1. Introduction",
+          "page": 2,
+          "strategy": "paragraph",
+          "chunk_size": 742
+        },
+        "score": 0.758285641670227,
+        "strategy": "dense",
+        "hit": false
+      }
+    ],
+    "context": "[para_llm_survey_2024_p2_6 | llm_survey.pdf | page 2]\nResearchers have organized the\nLLMs literature in surveys [50, 51, 52, 53], and topic-specific\nsurveys in [54, 55, 56, 57, 58]. In contrast to these surveys, our\ncontribution focuses on providing a comprehensive yet concise\noverview of the general direction of LLM research. This article summarizes architectural and training details of pre-trained\nLLMs and delves deeper into the details of concepts like finetuning, multi-modal LLMs, augmented LLMs, datasets, evaluation, applications, challenges, and others to provide a selfcontained comprehensive overview. Our key contributions are\nsummarized as follows. \u2022 We present a survey on the developments in LLM research,\nproviding a concise, comprehensive overview of the direction.",
+    "context_ids": [
+      "para_llm_survey_2024_p2_6"
+    ],
+    "context_chars": 785,
+    "elapsed_ms": 7.955166000101599,
+    "hit1": true,
+    "hit3": true,
+    "context_hit": false
+  },
+  {
+    "query_id": "Q05",
+    "split": "dev",
+    "question": "What is the core functionality of Microsoft's DeepSpeed library?",
+    "strategy": "dense_b800",
+    "top_k": 3,
+    "budget_chars": 800,
+    "gold": [
+      {
+        "source_id": "llm_survey_2024",
+        "page": 5,
+        "evidence": "DeepSpeed [36]: A library for scalable distributed training and\ninference of deep learning models."
+      }
+    ],
+    "results": [
+      {
+        "id": "para_llm_survey_2024_p10_8",
+        "source_id": "llm_survey_2024",
+        "source": "llm_survey.pdf",
+        "page": 10,
+        "text": "Because\nof MLA, DeepSeek-v2 achieves 5.76 times faster inference\nthroughput as compared to DeepSeek [138]. 10",
+        "metadata": {
+          "strategy": "paragraph",
+          "page": 10,
+          "source": "llm_survey.pdf",
+          "document_id": "llm_survey_2024",
+          "section": "3. Large Language Models",
+          "chunk_size": 109
+        },
+        "score": 0.7327335476875305,
+        "strategy": "dense",
+        "hit": false
+      },
+      {
+        "id": "para_llm_survey_2024_p35_3",
+        "source_id": "llm_survey_2024",
+        "source": "llm_survey.pdf",
+        "page": 35,
+        "text": "GPUs have played a crucial role in meeting the\nhardware requirements for training LLMs, with the networking\nindustry also evolving to optimize hardware for training\nworkloads. However, the growing size of LLMs, which has\nbeen outpacing hardware progress, makes model inference increasingly costly. Model quantization is a promising approach\nto bridge the widening gap between LLM size and hardware\ncapacity [495]. Although specialized hardware acceleration\nlike GPUs or TPUs can significantly reduce the computational\ncost, making real-time applications more feasible, they may not\nfully resolve all limitations, necessitating further advancements\nin hardware technology.",
+        "metadata": {
+          "chunk_size": 671,
+          "document_id": "llm_survey_2024",
+          "strategy": "paragraph",
+          "section": "8. Conclusion",
+          "source": "llm_survey.pdf",
+          "page": 35
+        },
+        "score": 0.7046810984611511,
+        "strategy": "dense",
+        "hit": false
+      },
+      {
+        "id": "para_llm_survey_2024_p5_0",
+        "source_id": "llm_survey_2024",
+        "source": "llm_survey.pdf",
+        "page": 5,
+        "text": "2.7. Libraries\nSome commonly used libraries for LLMs training are:\nTransformers [82]: The library provides access to various pretrained transformer models with APIs to train, fine-tune, infer,\nand develop custom models. DeepSpeed [36]: A library for scalable distributed training and\ninference of deep learning models. Megatron-LM [80]: It provides GPU-optimized techniques for\nlarge-scale training of LLMs. JAX [83]: A Python library for high-performance numerical\ncomputing and scaleable machine learning. It can differentiate native Python and NumPy functions and execute them on\nGPUs. Colossal-AI [84]: A collection of components to write distributed deep learning models. BMTrain [81]: A library to write efficient stand-alone LLMs\ntraining code.",
+        "metadata": {
+          "document_id": "llm_survey_2024",
+          "page": 5,
+          "strategy": "paragraph",
+          "source": "llm_survey.pdf",
+          "section": "2. Background",
+          "chunk_size": 751
+        },
+        "score": 0.7037113904953003,
+        "strategy": "dense",
+        "hit": true
+      }
+    ],
+    "context": "[para_llm_survey_2024_p10_8 | llm_survey.pdf | page 10]\nBecause\nof MLA, DeepSeek-v2 achieves 5.76 times faster inference\nthroughput as compared to DeepSeek [138]. 10",
+    "context_ids": [
+      "para_llm_survey_2024_p10_8"
+    ],
+    "context_chars": 165,
+    "elapsed_ms": 5.009708999978102,
+    "hit1": false,
+    "hit3": true,
+    "context_hit": false
+  },
+  {
+    "query_id": "Q06",
+    "split": "dev",
+    "question": "What role does Megatron-LM serve in large language model development?",
+    "strategy": "dense_b800",
+    "top_k": 3,
+    "budget_chars": 800,
+    "gold": [
+      {
+        "source_id": "llm_survey_2024",
+        "page": 5,
+        "evidence": "Megatron-LM [80]: It provides GPU-optimized techniques for\nlarge-scale training of LLMs."
+      }
+    ],
+    "results": [
+      {
+        "id": "para_llm_survey_2024_p1_3",
+        "source_id": "llm_survey_2024",
+        "source": "llm_survey.pdf",
+        "page": 1,
+        "text": "The need for generalized models stems from\nthe growing demand for machines to handle complex language\ntasks, including translation, summarization, information retrieval, conversational interactions, etc. Recently, significant\nbreakthroughs have been witnessed in language models, primarily attributed to transformers [1], increased computational\ncapabilities, and the availability of large-scale training data. These developments have brought about a revolutionary transformation by enabling the creation of LLMs that can approximate human-level performance on various tasks [2, 3].",
+        "metadata": {
+          "page": 1,
+          "chunk_size": 582,
+          "section": "1. Introduction",
+          "document_id": "llm_survey_2024",
+          "strategy": "paragraph",
+          "source": "llm_survey.pdf"
+        },
+        "score": 0.8184440732002258,
+        "strategy": "dense",
+        "hit": false
+      },
+      {
+        "id": "para_llm_survey_2024_p35_2",
+        "source_id": "llm_survey_2024",
+        "source": "llm_survey.pdf",
+        "page": 35,
+        "text": "While certain efforts like MobileBERT aim\nto reduce memory requirements, they still face substantial\nexecution overhead due to the large number of model layers,\nleading to high inference latency. Long-Term Dependencies: Large Language Models have\nshown considerable progress in understanding and generating\ntext, yet they often struggle with preserving context and\nhandling long-term dependencies, particularly in complex,\nmulti-turn conversations or long documents. This limitation\ncan lead to incoherent or irrelevant responses. Hardware Acceleration: The growth of LLMs presents significant hardware challenges due to the increasing computational\nand memory demands associated with training and deploying\nthese models.",
+        "metadata": {
+          "strategy": "paragraph",
+          "document_id": "llm_survey_2024",
+          "source": "llm_survey.pdf",
+          "chunk_size": 721,
+          "page": 35,
+          "section": "8. Conclusion"
+        },
+        "score": 0.7983019351959229,
+        "strategy": "dense",
+        "hit": false
+      },
+      {
+        "id": "para_llm_survey_2024_p2_2",
+        "source_id": "llm_survey_2024",
+        "source": "llm_survey.pdf",
+        "page": 2,
+        "text": "While\nconventional language modeling (LM) trains task-specific models in supervised settings, PLMs are trained in a self-supervised\nsetting on a large corpus of text [7, 8, 9] with the aim of learning\na generic representation that is shareable among various NLP\ntasks. After fine-tuning for downstream tasks, PLMs surpass\nthe performance gains of traditional language modeling (LM). The larger PLMs bring more performance gains, which has led\nto the transitioning of PLMs to LLMs by significantly increasing model parameters (tens to hundreds of billions) [10] and\ntraining dataset (many GBs and TBs) [10, 11]. Following this\ndevelopment, numerous LLMs have been proposed in the literature [10, 11, 12, 6, 13, 14, 15].",
+        "metadata": {
+          "page": 2,
+          "source": "llm_survey.pdf",
+          "chunk_size": 718,
+          "strategy": "paragraph",
+          "document_id": "llm_survey_2024",
+          "section": "1. Introduction"
+        },
+        "score": 0.7936777472496033,
+        "strategy": "dense",
+        "hit": false
+      }
+    ],
+    "context": "[para_llm_survey_2024_p1_3 | llm_survey.pdf | page 1]\nThe need for generalized models stems from\nthe growing demand for machines to handle complex language\ntasks, including translation, summarization, information retrieval, conversational interactions, etc. Recently, significant\nbreakthroughs have been witnessed in language models, primarily attributed to transformers [1], increased computational\ncapabilities, and the availability of large-scale training data. These developments have brought about a revolutionary transformation by enabling the creation of LLMs that can approximate human-level performance on various tasks [2, 3].",
+    "context_ids": [
+      "para_llm_survey_2024_p1_3"
+    ],
+    "context_chars": 636,
+    "elapsed_ms": 5.203833999985363,
+    "hit1": false,
+    "hit3": false,
+    "context_hit": false
+  },
+  {
+    "query_id": "Q07",
+    "split": "dev",
+    "question": "What distinguishes the JAX library in the context of machine learning and numerical computing?",
+    "strategy": "dense_b800",
+    "top_k": 3,
+    "budget_chars": 800,
+    "gold": [
+      {
+        "source_id": "llm_survey_2024",
+        "page": 5,
+        "evidence": "JAX [83]: A Python library for high-performance numerical\ncomputing and scaleable machine learning. It can differentiate native Python and NumPy functions and execute them on\nGPUs."
+      }
+    ],
+    "results": [
+      {
+        "id": "para_llm_survey_2024_p2_5",
+        "source_id": "llm_survey_2024",
+        "source": "llm_survey.pdf",
+        "page": 2,
+        "text": "The LLMs abilities to solve diverse tasks with human-level\nperformance come at the cost of slow training and inference,\nextensive hardware requirements, and higher running costs. Such requirements have limited their adoption and opened up\nopportunities to devise better architectures [15, 33, 34, 35]\nand training strategies [36, 37, 21, 38, 39, 40, 41]. Parameter efficient tuning [38, 41, 40], pruning [42, 43], quantization [44, 45], knowledge distillation, and context length interpolation [46, 47, 48, 49] among others are some of the methods\nwidely studied for efficient LLM utilization. Due to the success of LLMs on a wide variety of tasks, the\nresearch literature has recently experienced a large influx of\nLLM-related contributions.",
+        "metadata": {
+          "chunk_size": 742,
+          "page": 2,
+          "document_id": "llm_survey_2024",
+          "strategy": "paragraph",
+          "section": "1. Introduction",
+          "source": "llm_survey.pdf"
+        },
+        "score": 0.714697003364563,
+        "strategy": "dense",
+        "hit": false
+      },
+      {
+        "id": "para_llm_survey_2024_p11_1",
+        "source_id": "llm_survey_2024",
+        "source": "llm_survey.pdf",
+        "page": 11,
+        "text": "Codex [141]: This LLM is trained on a subset of public Python\nGithub repositories to generate code from docstrings. Computer programming is an iterative process where the programs\nare often debugged and updated before fulfilling the requirements. Similarly, Codex generates 100 versions of a program\nby repetitive sampling for a given description, which produces\na working solution for 77.5% of the problems passing unit tests. Its powerful version powers Github Copilot2. AlphaCode [142]: A set of large language models, ranging\nfrom 300M to 41B parameters, designed for competition-level\ncode generation tasks. It uses the multi-query attention [143] to\nreduce memory and cache costs.",
+        "metadata": {
+          "document_id": "llm_survey_2024",
+          "source": "llm_survey.pdf",
+          "strategy": "paragraph",
+          "page": 11,
+          "section": "3. Large Language Models",
+          "chunk_size": 686
+        },
+        "score": 0.7131280303001404,
+        "strategy": "dense",
+        "hit": false
+      },
+      {
+        "id": "para_llm_survey_2024_p25_2",
+        "source_id": "llm_survey_2024",
+        "source": "llm_survey.pdf",
+        "page": 25,
+        "text": "Cost Training Parallelism Library\nT5 [10] JMLR'20 Apache-2.0 Google General 11B \u2713 1M 1T Heur+Dedup 1024 TPU v3 - - D+M Mesh TensorFlow\nGPT-3 [6] NeurIPS'20 - OpenAI General 175B \u00d7 - 300B Dedup+QF - V100 - - M -\nmT5 [11] NAACL'21 Apache-2.0 Google General 13B \u2713 1M 1T - - - - - - -\nPanGu-\u03b1 [108] arXiv'21 Apache-2.0 Huawei General 200B \u2713 260k 1.1TB Heur+Dedup 2048 Ascend 910 - - D+OP+P+O+R MindSpore\nCPM-2 [12] AI Open'21 MIT Tsinghua General 198B \u2713 1M 2.6TB Dedup - - - - D+M JAXFormer\nCodex [141] arXiv'21 - OpenAI Coding 12B \u00d7 - 100B Heur - - - - - -\nERNIE 3.0 [110] arXiv'21 - Baidu General 10B \u00d7 120k\u2217 375B Heur+Dedup 384 V100 - - M\u2217 PaddlePaddle\nJurassic-1 [112] White-Paper'21 Apache-2.0 AI21 General 178B \u2713 - 300B - 800 GPU - - D+M+P Megatron+DS\nHyperCLOVA [114] EMNLP'21 - Naver General 82B \u00d7 - 300B Clf+Dedup+PF 1024 A100 321h 1.32 Mil M Megatron\nYuan 1.0 [115] arXiv'21 Apache-2.0 - General 245B \u2713 26k\u2217 180B Heur+Clf+Dedup 2128 GPU - - D+T+P -\nGopher [116] arXiv'21 - Google General 280B \u00d7 - 300B QF+Dedup 4096 TPU v3 920h 13.19 Mil D+M JAX+Haiku\nERNIE 3.0 Titan [35] arXiv'21 - Baidu General 260B \u00d7 - 300B Heur+Dedup - Ascend 910 - - D+M+P+D* PaddlePaddle\nGPT-NeoX-20B [118] BigScience'22 Apache-2.0 EleutherAI General 20B \u2713 150k 825GB None 96 40G A100 - - M Megatron+DS+PyTorch\nOPT [14] arXiv'22 MIT Meta General 175B \u2713 150k 180B Dedup 992 80G A100 - - D+T Megatron\nBLOOM [13] arXiv'22 RAIL-1.0 BigScience General 176B \u2713 - 366B Dedup+PR 384 80G A100 2520h 3.87 Mil D+T+P Megatron+DS\nGalactica [148] arXiv'22 Apache-2.0 Meta Science 120B \u00d7 225k 106B Dedup 128 80GB A100 - - - Metaseq\nGLaM [91] ICML'22 - Google General 1.2T \u00d7 600k\u2217 600B Clf 1024 TPU v4 - - M GSPMD\nLaMDA [150] arXiv'22 - Google Dialog 137B \u00d7 3M 2.81T Filtered 1024 TPU v3 1384h 4.96 Mil D+M Lingvo\nMT-NLG [117] arXiv'22 Apache-v2.0 MS.+Nvidia General 530B \u00d7 - 270B - 4480 80G A100 - - D+T+P Megatron+DS\nAlphaCode [142] Science'22 Apache-v2.0 Google Coding 41B \u2713 205k 967B Heur+Dedup - TPU v4 - - M JAX+Haiku\nChinchilla [96] arXiv'22 - Google General 70B \u00d7 - 1.4T QF+Dedup - TPUv4 - - - JAX+Haiku\nPaLM [15] arXiv'22 - Google General 540B \u00d7 255k 780B Heur 6144 TPU v4 - - D+M JAX+T5X\nAlexaTM [122] arXiv'22 Apache v2.0 Amazon General 20B \u00d7 500k 1.1T Filtered 128 A100 2880h 1.47 Mil M DS\nU-PaLM [124] arXiv'22 - Google General 540B \u00d7 20k - - 512 TPU v4 120h 0.25 Mil - -\nUL2 [125] ICLR'23 Apache-2.0 Google General 20B \u2713 2M 1T - 512 TPU v4 - - M JAX+T5X\nGLM [33] ICLR'23 Apache-2.0 Multiple General 130B \u00d7 - 400B - 768 40G A100 1440h 3.37 Mil M -\nCodeGen [140] ICLR'23 Apache-2.0 Salesforce Coding 16B \u2713 650k 577B Heur+Dedup - TPU v4 - - D+M JAXFormer\nLLaMA [127] arXiv'23 - Meta General 65B \u00d7 350k 1.4T Clf+Heur+Dedup 2048 80G A100 504h 4.12 Mil D+M xFormers\nPanGu\u03a3 [92] arXiv'23 - Huawei General 1.085T \u00d7 - 329B - 512 Ascend 910 2400h - D+OP+P+O+R MindSpore\nBloombergGPT [151] arXiv23 - Bloomberg Finance 50B \u00d7 139k 569B Dedup 512 40G A100 1272h 1.97 Mil M PyTorch\nXuan Yuan 2.0 [152] arXiv23 RAIL-1.0 Du Xiaoman Finance 176B \u2713 - 366B Filtered - 80GB A100 - - P DS\nCodeT5+ [34] arXiv'23 BSD-3 Salesforce Coding 16B \u2713 110k 51.5B Dedup 16 40G A100 - - - DS\nStarCoder [147] arXiv'23 OpenRAIL-M BigCode Coding 15.5B \u2713 250k 1T Dedup+QF+PF 512 80G A100 624h 1.28 Mil D+T+P Megatron-LM\nLLaMA-2 [21] arXiv'23 LLaMA-2.0 Meta General 70B \u2713 500k 2T Minimal Filtering - 80G A100 1.7Mh - - -\nPaLM-2 [123] arXiv'23 - Google General - \u00d7 - - Ddedup+PF+QF - - - - - -\nLLaMA-3.1 [130] arXiv'24 LLaMA-3.0 Meta General 405B \u2713 1.2M 15T Dedup+QF 16k 80G H100 30.84Mh - D+T+P+C PyTorch\nMixtral 8x22B [131] web'24 Apache-2.0 Mistral AI General 141B \u2713 - - - - - - - - -\nSnowflake Arctic [132] web'24 Apache-2.0 Snowflake General 480B \u2713 - 3.5T - - - - T+P DS\nNemotron-4 340B [137]web'24 Nvidia Nvidia General 340B \u2713 - 9T - 6144 80G H100 - - D+T+P -\nDeepSeek [138] arXiv'24 MIT DeepSeek General 67B \u2713 - 2T Dedup+QF - - 300.6Kh - D+T+P DS\nDeepSeek-v2 [139] arXiv'24 MIT DeepSeek General 67B \u2713 - 8.1T QF - H800 172.8Kh - D+P HAI-LLM\nTable 4: Summary of instruction tuned LLMs (>10B).",
+        "metadata": {
+          "chunk_size": 4033,
+          "page": 25,
+          "source": "llm_survey.pdf",
+          "section": "5. Datasets and Evaluation",
+          "document_id": "llm_survey_2024",
+          "strategy": "paragraph"
+        },
+        "score": 0.7108129262924194,
+        "strategy": "dense",
+        "hit": false
+      }
+    ],
+    "context": "[para_llm_survey_2024_p2_5 | llm_survey.pdf | page 2]\nThe LLMs abilities to solve diverse tasks with human-level\nperformance come at the cost of slow training and inference,\nextensive hardware requirements, and higher running costs. Such requirements have limited their adoption and opened up\nopportunities to devise better architectures [15, 33, 34, 35]\nand training strategies [36, 37, 21, 38, 39, 40, 41]. Parameter efficient tuning [38, 41, 40], pruning [42, 43], quantization [44, 45], knowledge distillation, and context length interpolation [46, 47, 48, 49] among others are some of the methods\nwidely studied for efficient LLM utilization. Due to the success of LLMs on a wide variety of tasks, the\nresearch literature has recently experienced a large influx of\nLLM-related contributions.",
+    "context_ids": [
+      "para_llm_survey_2024_p2_5"
+    ],
+    "context_chars": 796,
+    "elapsed_ms": 5.3191669999250735,
+    "hit1": false,
+    "hit3": false,
+    "context_hit": false
+  },
+  {
+    "query_id": "Q08",
+    "split": "dev",
+    "question": "What is the process of instruction-tuning for LLMs?",
+    "strategy": "dense_b800",
+    "top_k": 3,
+    "budget_chars": 800,
+    "gold": [
+      {
+        "source_id": "llm_survey_2024",
+        "page": 7,
+        "evidence": "Instruction-tuning: To enable a model to respond to user\nqueries effectively, the pre-trained model is fine-tuned on instruction formatted data i.e., instruction and an input-output\npair."
+      }
+    ],
+    "results": [
+      {
+        "id": "para_llm_survey_2024_p16_0",
+        "source_id": "llm_survey_2024",
+        "source": "llm_survey.pdf",
+        "page": 16,
+        "text": "Figure 10: This example illustrates the PanGu-P architecture, as depicted in\nthe image sourced from [92]. 3.2.1. Instruction-Tuning with Manually Created Datasets\nNumerous hand-crafted instruction-tuning datasets with\ndifferent design choices are proposed in the literature to\ninstruction-tune LLMs. The performance of fine-tuned LLMs\ndepends on multiple factors, such as dataset, instruction diversity, prompting templates, model size, and training objectives. Keeping this in view, diverse fine-tuned models have emerged\nin the literature using manually created datasets. The models T0 [17] and mT0 (multi-lingual) [154] employ\ntemplates to convert existing datasets into prompt datasets. They have shown improvements in generalization to zero-shot\nand held-out tasks.",
+        "metadata": {
+          "strategy": "paragraph",
+          "document_id": "llm_survey_2024",
+          "source": "llm_survey.pdf",
+          "section": "3. Large Language Models",
+          "chunk_size": 770,
+          "page": 16
+        },
+        "score": 0.8437696099281311,
+        "strategy": "dense",
+        "hit": false
+      },
+      {
+        "id": "para_llm_survey_2024_p16_2",
+        "source_id": "llm_survey_2024",
+        "source": "llm_survey.pdf",
+        "page": 16,
+        "text": "Another method [102] uses\nsymbolic tasks with tasks in T0, Flan, etc. 3.2.2. Instruction-Tuning with LLMs Generated Datasets\nGenerating an instruction-tuning dataset requires carefully\nwriting instructions and input-output pairs, which are often\nwritten by humans, smaller in size, and less diverse. To overcome this, self-instruct [19] proposed an approach to prompt\navailable LLMs to generate instruction-tuning datasets. Selfinstruct outperformed models trained on manually created\ndataset SUPER-NATURALINSTRUCTIONS (a dataset with\n1600+ tasks) [18] by 33%.",
+        "metadata": {
+          "source": "llm_survey.pdf",
+          "page": 16,
+          "document_id": "llm_survey_2024",
+          "section": "3. Large Language Models",
+          "strategy": "paragraph",
+          "chunk_size": 560
+        },
+        "score": 0.8234465718269348,
+        "strategy": "dense",
+        "hit": false
+      },
+      {
+        "id": "para_llm_survey_2024_p2_5",
+        "source_id": "llm_survey_2024",
+        "source": "llm_survey.pdf",
+        "page": 2,
+        "text": "The LLMs abilities to solve diverse tasks with human-level\nperformance come at the cost of slow training and inference,\nextensive hardware requirements, and higher running costs. Such requirements have limited their adoption and opened up\nopportunities to devise better architectures [15, 33, 34, 35]\nand training strategies [36, 37, 21, 38, 39, 40, 41]. Parameter efficient tuning [38, 41, 40], pruning [42, 43], quantization [44, 45], knowledge distillation, and context length interpolation [46, 47, 48, 49] among others are some of the methods\nwidely studied for efficient LLM utilization. Due to the success of LLMs on a wide variety of tasks, the\nresearch literature has recently experienced a large influx of\nLLM-related contributions.",
+        "metadata": {
+          "page": 2,
+          "document_id": "llm_survey_2024",
+          "chunk_size": 742,
+          "source": "llm_survey.pdf",
+          "strategy": "paragraph",
+          "section": "1. Introduction"
+        },
+        "score": 0.801291823387146,
+        "strategy": "dense",
+        "hit": false
+      }
+    ],
+    "context": "[para_llm_survey_2024_p16_2 | llm_survey.pdf | page 16]\nAnother method [102] uses\nsymbolic tasks with tasks in T0, Flan, etc. 3.2.2. Instruction-Tuning with LLMs Generated Datasets\nGenerating an instruction-tuning dataset requires carefully\nwriting instructions and input-output pairs, which are often\nwritten by humans, smaller in size, and less diverse. To overcome this, self-instruct [19] proposed an approach to prompt\navailable LLMs to generate instruction-tuning datasets. Selfinstruct outperformed models trained on manually created\ndataset SUPER-NATURALINSTRUCTIONS (a dataset with\n1600+ tasks) [18] by 33%.",
+    "context_ids": [
+      "para_llm_survey_2024_p16_2"
+    ],
+    "context_chars": 616,
+    "elapsed_ms": 4.703457999994498,
+    "hit1": false,
+    "hit3": false,
+    "context_hit": false
+  },
+  {
+    "query_id": "Q09",
+    "split": "dev",
+    "question": "What is the architecture and pre-training objective of UL2?",
+    "strategy": "dense_b800",
+    "top_k": 3,
+    "budget_chars": 800,
+    "gold": [
+      {
+        "source_id": "llm_survey_2024",
+        "page": 10,
+        "evidence": "UL2 [125]: An encoder-decoder architecture trained using a\nmixture of denoisers (MoD) objective. Denoisers include 1)\nR-Denoiser: a regular span masking, 2) S-Denoiser: which corrupts consecutive tokens of a large sequence and 3) X-Denoiser:\nwhich corrupts a large number of tokens randomly."
+      }
+    ],
+    "results": [
+      {
+        "id": "para_llm_survey_2024_p9_7",
+        "source_id": "llm_survey_2024",
+        "source": "llm_survey.pdf",
+        "page": 9,
+        "text": "To lessen\ntoxicity and memorization, it appends special tokens with a\nfraction of pre-training data, which shows a reduction in generating harmful responses. U-PaLM [124]: This method trains PaLM for 0.1% additional compute with the UL2 (also named as UL2Restore) objective [125], using the same dataset it outperforms the baseline\nsignificantly on various NLP tasks, including zero-shot, fewshot, commonsense reasoning, CoT, etc. Training with UL2R\ninvolves converting a causal decoder PaLM to a non-causal decoder PaLM and employing 50% sequential denoising, 25%\nregular denoising, and 25% extreme denoising loss functions. 9",
+        "metadata": {
+          "chunk_size": 627,
+          "strategy": "paragraph",
+          "source": "llm_survey.pdf",
+          "section": "3. Large Language Models",
+          "document_id": "llm_survey_2024",
+          "page": 9
+        },
+        "score": 0.7709209322929382,
+        "strategy": "dense",
+        "hit": false
+      },
+      {
+        "id": "para_llm_survey_2024_p2_7",
+        "source_id": "llm_survey_2024",
+        "source": "llm_survey.pdf",
+        "page": 2,
+        "text": "\u2022 We present extensive summaries of pre-trained models that\ninclude fine-grained details of architecture and training details. \u2022 We summarize major findings of the popular contributions\nand provide a detailed discussion on the key design and\ndevelopment aspects of LLMs to help practitioners effectively leverage this technology. \u2022 In this self-contained article, we cover a range of concepts to present the general direction of LLMs comprehensively, including background, pre-training, fine-tuning,\n2",
+        "metadata": {
+          "strategy": "paragraph",
+          "section": "1. Introduction",
+          "page": 2,
+          "document_id": "llm_survey_2024",
+          "chunk_size": 501,
+          "source": "llm_survey.pdf"
+        },
+        "score": 0.735875129699707,
+        "strategy": "dense",
+        "hit": false
+      },
+      {
+        "id": "para_llm_survey_2024_p23_3",
+        "source_id": "llm_survey_2024",
+        "source": "llm_survey.pdf",
+        "page": 23,
+        "text": "Architecture\nDue to the gigantic scale of LLMs, minor changes in architecture and training strategies have a big impact on performance\nand stability. Here, we summarize key architectural modules\nused in various LLMs, leading to better performance, reduced\ntraining time and memory, and better training stability. Layer Normalization: The performance and training stability\nof LLMs are affected significantly by layer normalization. Prenorm, that is normalizing inputs rather than outputs, is more\ncommon among LLMs stabilizing the training [6, 127, 108]. BLOOM [13] and AlexaTM [122] utilize an additional layer\nnormalization before embedding layer to stabilize the training\nof large-scale models, while the model\u2019s zero-shot generalization ability can be negatively impacted [13].",
+        "metadata": {
+          "section": "3. Large Language Models",
+          "source": "llm_survey.pdf",
+          "strategy": "paragraph",
+          "page": 23,
+          "document_id": "llm_survey_2024",
+          "chunk_size": 781
+        },
+        "score": 0.7160298228263855,
+        "strategy": "dense",
+        "hit": false
+      }
+    ],
+    "context": "[para_llm_survey_2024_p9_7 | llm_survey.pdf | page 9]\nTo lessen\ntoxicity and memorization, it appends special tokens with a\nfraction of pre-training data, which shows a reduction in generating harmful responses. U-PaLM [124]: This method trains PaLM for 0.1% additional compute with the UL2 (also named as UL2Restore) objective [125], using the same dataset it outperforms the baseline\nsignificantly on various NLP tasks, including zero-shot, fewshot, commonsense reasoning, CoT, etc. Training with UL2R\ninvolves converting a causal decoder PaLM to a non-causal decoder PaLM and employing 50% sequential denoising, 25%\nregular denoising, and 25% extreme denoising loss functions. 9",
+    "context_ids": [
+      "para_llm_survey_2024_p9_7"
+    ],
+    "context_chars": 681,
+    "elapsed_ms": 5.099250000057509,
+    "hit1": false,
+    "hit3": false,
+    "context_hit": false
+  },
+  {
+    "query_id": "Q10",
+    "split": "dev",
+    "question": "What architecture does CodeGen share with PaLM?",
+    "strategy": "dense_b800",
+    "top_k": 3,
+    "budget_chars": 800,
+    "gold": [
+      {
+        "source_id": "llm_survey_2024",
+        "page": 11,
+        "evidence": "CodeGen [140]: CodeGen has a similar architecture to\nPaLM [15], i.e., parallel attention, MLP layers, and RoPE embeddings."
+      }
+    ],
+    "results": [
+      {
+        "id": "para_llm_survey_2024_p11_0",
+        "source_id": "llm_survey_2024",
+        "source": "llm_survey.pdf",
+        "page": 11,
+        "text": "3.1.2. Coding\nCodeGen [140]: CodeGen has a similar architecture to\nPaLM [15], i.e., parallel attention, MLP layers, and RoPE embeddings. The model is trained on both natural language and\nprogramming language data sequentially (trained on the first\ndataset, then the second, and so on) on the following datasets\n1) PILE, 2) BIGQUERY, and 3) BIGPYTHON. CodeGen proposed a multi-step approach to synthesizing code. The purpose\nis to simplify the generation of long sequences where the previous prompt and generated code are given as input with the next\nprompt to generate the next code sequence. CodeGen opensource a Multi-Turn Programming Benchmark (MTPB) to evaluate multi-step program synthesis.",
+        "metadata": {
+          "source": "llm_survey.pdf",
+          "document_id": "llm_survey_2024",
+          "page": 11,
+          "chunk_size": 695,
+          "section": "3. Large Language Models",
+          "strategy": "paragraph"
+        },
+        "score": 0.7970213294029236,
+        "strategy": "dense",
+        "hit": true
+      },
+      {
+        "id": "para_llm_survey_2024_p9_6",
+        "source_id": "llm_survey_2024",
+        "source": "llm_survey.pdf",
+        "page": 9,
+        "text": "Additional changes to the conventional transformer model include SwiGLU activation, RoPE embeddings,\nmulti-query attention that saves computation cost during decoding, and shared input-output embeddings. During training, loss\nspiking was observed, and to fix it, model training was restarted\nfrom a 100-step earlier checkpoint by skipping 200-500 batches\naround the spike. Moreover, the model was found to memorize around 2.4% of the training data at the 540B model scale,\nwhereas this number was lower for smaller models. PaLM-2 [123]: A smaller multi-lingual variant of PaLM,\ntrained for larger iterations on a better quality dataset. PaLM2 shows significant improvements over PaLM, while reducing\ntraining and inference costs due to its smaller size.",
+        "metadata": {
+          "document_id": "llm_survey_2024",
+          "chunk_size": 753,
+          "page": 9,
+          "section": "3. Large Language Models",
+          "strategy": "paragraph",
+          "source": "llm_survey.pdf"
+        },
+        "score": 0.6698253750801086,
+        "strategy": "dense",
+        "hit": false
+      },
+      {
+        "id": "para_llm_survey_2024_p25_4",
+        "source_id": "llm_survey_2024",
+        "source": "llm_survey.pdf",
+        "page": 25,
+        "text": "Parallelism Library\nWebGPT [166] arXiv'21 - OpenAI General 175B \u00d7 GPT-3 - - - - - - - -\nT0 [17] ICLR'22 Apache-2.0 BigScience General 11B \u2713 T5 - 250B 512 TPU v3 270h 0.48 Mil - -\nTk-Instruct [18] EMNLP'22 MIT AI2+ General 11B \u2713 T5 1000 - 256 TPU v3 4h 0.0036 Mil - Google T5\nOPT-IML [97] arXiv'22 - Meta General 175B \u00d7 OPT 8k 2B 128 40G A100 - - D+T Megatron\nFlan-U-PaLM [16] ICLR'22 Apache-2.0 Google General 540B \u2713 U-PaLM 30k - 512 TPU v4 - - - JAX+T5X\nmT0 [154] ACL'23 Apache-2.0 HuggingFace+ General 13B \u2713 mT5 - - - - - - - -\nSparrow [167] arXiv'22 - Google Dialog 70B \u00d7 Chinchilla - - 64 TPU v3 - - M -\nWizardCoder [164] arXiv'23 Apache-2.0 HK Bapt.",
+        "metadata": {
+          "section": "5. Datasets and Evaluation",
+          "chunk_size": 654,
+          "page": 25,
+          "source": "llm_survey.pdf",
+          "document_id": "llm_survey_2024",
+          "strategy": "paragraph"
+        },
+        "score": 0.6676275730133057,
+        "strategy": "dense",
+        "hit": false
+      }
+    ],
+    "context": "[para_llm_survey_2024_p11_0 | llm_survey.pdf | page 11]\n3.1.2. Coding\nCodeGen [140]: CodeGen has a similar architecture to\nPaLM [15], i.e., parallel attention, MLP layers, and RoPE embeddings. The model is trained on both natural language and\nprogramming language data sequentially (trained on the first\ndataset, then the second, and so on) on the following datasets\n1) PILE, 2) BIGQUERY, and 3) BIGPYTHON. CodeGen proposed a multi-step approach to synthesizing code. The purpose\nis to simplify the generation of long sequences where the previous prompt and generated code are given as input with the next\nprompt to generate the next code sequence. CodeGen opensource a Multi-Turn Programming Benchmark (MTPB) to evaluate multi-step program synthesis.",
+    "context_ids": [
+      "para_llm_survey_2024_p11_0"
+    ],
+    "context_chars": 751,
+    "elapsed_ms": 4.500332999896273,
+    "hit1": true,
+    "hit3": true,
+    "context_hit": true
+  },
+  {
+    "query_id": "Q11",
+    "split": "dev",
+    "question": "What benefit does aligning an LLM with supported evidence provide?",
+    "strategy": "dense_b800",
+    "top_k": 3,
+    "budget_chars": 800,
+    "gold": [
+      {
+        "source_id": "llm_survey_2024",
+        "page": 17,
+        "evidence": "Aligning with Supported Evidence: This style of alignment\nallows the model to generate responses with proofs and facts,\nreduces hallucination, and assists humans more effectively,\nwhich increases trust in the model\u2019s output."
+      }
+    ],
+    "results": [
+      {
+        "id": "para_llm_survey_2024_p33_4",
+        "source_id": "llm_survey_2024",
+        "source": "llm_survey.pdf",
+        "page": 33,
+        "text": "This collaborative effort between legal experts and LLMs has\nproved to be effective in analyzing legal texts such as court\nopinions on theft, improving both the efficiency and quality of\nthe research [466]. Additionally, LLMs have been evaluated for\ntheir ability to generate explanations of legal terms, focusing\non improving factual accuracy and relevance by incorporating\nsentences from case law. By feeding relevant case law into the\nLLM, the augmented models can generate higher-quality explanations with less factually incorrect information [467]. Moreover, LLMs can be trained with specialized domain knowledge\nto perform legal reasoning tasks [468] and answer legal questions [469].",
+        "metadata": {
+          "chunk_size": 690,
+          "strategy": "paragraph",
+          "source": "llm_survey.pdf",
+          "section": "7. Challenges and Future Directions",
+          "document_id": "llm_survey_2024",
+          "page": 33
+        },
+        "score": 0.7636871337890625,
+        "strategy": "dense",
+        "hit": false
+      },
+      {
+        "id": "para_llm_survey_2024_p33_3",
+        "source_id": "llm_survey_2024",
+        "source": "llm_survey.pdf",
+        "page": 33,
+        "text": "LLMs can be employed to check the validity of mathematical proofs, offering a preliminary filter before\nhuman review. While they are not a substitute for the meticulous work of mathematicians, they can help simplify the process\nof proof verification [463, 464]. Moreover, LLMs enhance accessibility to mathematics by translating complex concepts and\nfindings into understandable language for non-specialists [465],\nwhere the gap between theoretical mathematics and applied\ncontexts such as physics, engineering, and economics can be\nbridged. Law: LLMs can assist with the thematic analysis of legal documents, including generating initial coding for datasets, identifying themes, and classifying data according to these themes.",
+        "metadata": {
+          "document_id": "llm_survey_2024",
+          "page": 33,
+          "source": "llm_survey.pdf",
+          "chunk_size": 727,
+          "strategy": "paragraph",
+          "section": "7. Challenges and Future Directions"
+        },
+        "score": 0.7593902945518494,
+        "strategy": "dense",
+        "hit": false
+      },
+      {
+        "id": "para_llm_survey_2024_p17_3",
+        "source_id": "llm_survey_2024",
+        "source": "llm_survey.pdf",
+        "page": 17,
+        "text": "Opposite to constitutional AI, AlpacaFarm injects noise in feedback\nto replicate human mistakes. Self-Align [98] prompts the\nLLM with ICL examples, instructing the LLM about what the\nresponse should contain to be considered useful and ethical. The same LLM is later fine-tuned with the new dataset. Aligning with Prompts: LLMs can be steered with prompts to\ngenerate desirable responses without training [175, 176]. The\nself-correction prompting in [176] concatenates instructions\nand CoT with questions, guiding the model to answer its\ninstruction following a strategy to ensure moral safety before\nthe actual answer. This strategy is shown to reduce the harm in\ngenerated responses significantly.",
+        "metadata": {
+          "strategy": "paragraph",
+          "chunk_size": 698,
+          "source": "llm_survey.pdf",
+          "document_id": "llm_survey_2024",
+          "section": "3. Large Language Models",
+          "page": 17
+        },
+        "score": 0.7152312397956848,
+        "strategy": "dense",
+        "hit": false
+      }
+    ],
+    "context": "[para_llm_survey_2024_p33_4 | llm_survey.pdf | page 33]\nThis collaborative effort between legal experts and LLMs has\nproved to be effective in analyzing legal texts such as court\nopinions on theft, improving both the efficiency and quality of\nthe research [466]. Additionally, LLMs have been evaluated for\ntheir ability to generate explanations of legal terms, focusing\non improving factual accuracy and relevance by incorporating\nsentences from case law. By feeding relevant case law into the\nLLM, the augmented models can generate higher-quality explanations with less factually incorrect information [467]. Moreover, LLMs can be trained with specialized domain knowledge\nto perform legal reasoning tasks [468] and answer legal questions [469].",
+    "context_ids": [
+      "para_llm_survey_2024_p33_4"
+    ],
+    "context_chars": 746,
+    "elapsed_ms": 5.100249999941298,
+    "hit1": false,
+    "hit3": false,
+    "context_hit": false
+  },
+  {
+    "query_id": "Q12",
+    "split": "dev",
+    "question": "How does PEQA adapt pre-trained models efficiently?",
+    "strategy": "dense_b800",
+    "top_k": 3,
+    "budget_chars": 800,
+    "gold": [
+      {
+        "source_id": "llm_survey_2024",
+        "page": 22,
+        "evidence": "PEQA) [264] reduces the precision of fully-connected layers\nand fine-tunes only quantization scaling parameters."
+      }
+    ],
+    "results": [
+      {
+        "id": "para_llm_survey_2024_p22_0",
+        "source_id": "llm_survey_2024",
+        "source": "llm_survey.pdf",
+        "page": 22,
+        "text": "parameter-efficient fine-tuning of the pre-trained model. Similarly, parameter-efficient and quantization-aware adaptation\n(PEQA) [264] reduces the precision of fully-connected layers\nand fine-tunes only quantization scaling parameters. LLMQAT [262] generates training data from the pre-trained network\nand trains a quantized student model with knowledge distillation. QLoRA [261] fine-tunes 4-bit quantized pre-trained LLM\nwith LoRA [250] using a 4-bit normal float, which shows better\nperformance over a 4-bit integer and float. 3.6.3. Pruning\nPruning is an alternative approach to quantization to compress model size, thereby reducing LLMs deployment costs\nsignificantly.",
+        "metadata": {
+          "section": "3. Large Language Models",
+          "strategy": "paragraph",
+          "document_id": "llm_survey_2024",
+          "source": "llm_survey.pdf",
+          "page": 22,
+          "chunk_size": 674
+        },
+        "score": 0.7920822501182556,
+        "strategy": "dense",
+        "hit": true
+      },
+      {
+        "id": "para_llm_survey_2024_p21_0",
+        "source_id": "llm_survey_2024",
+        "source": "llm_survey.pdf",
+        "page": 21,
+        "text": "Figure 14: Illustration of parameter-efficient fine-tuning paradigms, where x is input and h is hidden state, figure courtesy [38]. Parallel adapter and LoRA fall in\nthe adapter tuning category. employs multiple adapter modules in a single layer. AdaMix\nroutes input instances randomly to one of the multiple downscale and upscale modules. The mixture of adapters is averaged\nout for inference to avoid additional latency. Low-Rank Adaptation (LoRA) [250] learns low-rank decomposed matrices to\nfreeze original weights. The learned weights are fused with the\noriginal weights for inference, avoiding latency. Prompt Tuning: Prompting is an effective way to adapt a\npre-trained LLM for the downstream task.",
+        "metadata": {
+          "page": 21,
+          "chunk_size": 705,
+          "document_id": "llm_survey_2024",
+          "source": "llm_survey.pdf",
+          "strategy": "paragraph",
+          "section": "3. Large Language Models"
+        },
+        "score": 0.7708140015602112,
+        "strategy": "dense",
+        "hit": false
+      },
+      {
+        "id": "para_llm_survey_2024_p8_2",
+        "source_id": "llm_survey_2024",
+        "source": "llm_survey.pdf",
+        "page": 8,
+        "text": "The models are\ntrained with knowledge inheritance, starting with only the Chinese language in the first stage and then adding English and\nChinese data. This trained model gets duplicated multiple times\nto initialize the 198B MoE model. Moreover, to use the model\nfor downstream tasks, CPM-2 experimented with both complete fine-tuning and prompt fine-tuning as in [40] where only\nprompt-related parameters are updated by inserting prompts at\nvarious positions, front, middle, and back. CPM-2 also proposes the INFMOE, a memory-efficient framework with a strategy to dynamically offload parameters to the CPU for inference\nat a 100B scale. It overlaps data movement with inference computation for lower inference time.",
+        "metadata": {
+          "source": "llm_survey.pdf",
+          "page": 8,
+          "chunk_size": 717,
+          "strategy": "paragraph",
+          "section": "3. Large Language Models",
+          "document_id": "llm_survey_2024"
+        },
+        "score": 0.7611143589019775,
+        "strategy": "dense",
+        "hit": false
+      }
+    ],
+    "context": "[para_llm_survey_2024_p22_0 | llm_survey.pdf | page 22]\nparameter-efficient fine-tuning of the pre-trained model. Similarly, parameter-efficient and quantization-aware adaptation\n(PEQA) [264] reduces the precision of fully-connected layers\nand fine-tunes only quantization scaling parameters. LLMQAT [262] generates training data from the pre-trained network\nand trains a quantized student model with knowledge distillation. QLoRA [261] fine-tunes 4-bit quantized pre-trained LLM\nwith LoRA [250] using a 4-bit normal float, which shows better\nperformance over a 4-bit integer and float. 3.6.3. Pruning\nPruning is an alternative approach to quantization to compress model size, thereby reducing LLMs deployment costs\nsignificantly.",
+    "context_ids": [
+      "para_llm_survey_2024_p22_0"
+    ],
+    "context_chars": 730,
+    "elapsed_ms": 4.5882920001076855,
+    "hit1": true,
+    "hit3": true,
+    "context_hit": true
+  },
+  {
+    "query_id": "Q13",
+    "split": "dev",
+    "question": "How does QLoRA achieve 4-bit fine-tuning of LLMs?",
+    "strategy": "dense_b800",
+    "top_k": 3,
+    "budget_chars": 800,
+    "gold": [
+      {
+        "source_id": "llm_survey_2024",
+        "page": 22,
+        "evidence": "QLoRA [261] fine-tunes 4-bit quantized pre-trained LLM\nwith LoRA [250] using a 4-bit normal float, which shows better\nperformance over a 4-bit integer and float."
+      }
+    ],
+    "results": [
+      {
+        "id": "para_llm_survey_2024_p2_5",
+        "source_id": "llm_survey_2024",
+        "source": "llm_survey.pdf",
+        "page": 2,
+        "text": "The LLMs abilities to solve diverse tasks with human-level\nperformance come at the cost of slow training and inference,\nextensive hardware requirements, and higher running costs. Such requirements have limited their adoption and opened up\nopportunities to devise better architectures [15, 33, 34, 35]\nand training strategies [36, 37, 21, 38, 39, 40, 41]. Parameter efficient tuning [38, 41, 40], pruning [42, 43], quantization [44, 45], knowledge distillation, and context length interpolation [46, 47, 48, 49] among others are some of the methods\nwidely studied for efficient LLM utilization. Due to the success of LLMs on a wide variety of tasks, the\nresearch literature has recently experienced a large influx of\nLLM-related contributions.",
+        "metadata": {
+          "source": "llm_survey.pdf",
+          "chunk_size": 742,
+          "section": "1. Introduction",
+          "page": 2,
+          "document_id": "llm_survey_2024",
+          "strategy": "paragraph"
+        },
+        "score": 0.7604981660842896,
+        "strategy": "dense",
+        "hit": false
+      },
+      {
+        "id": "para_llm_survey_2024_p22_0",
+        "source_id": "llm_survey_2024",
+        "source": "llm_survey.pdf",
+        "page": 22,
+        "text": "parameter-efficient fine-tuning of the pre-trained model. Similarly, parameter-efficient and quantization-aware adaptation\n(PEQA) [264] reduces the precision of fully-connected layers\nand fine-tunes only quantization scaling parameters. LLMQAT [262] generates training data from the pre-trained network\nand trains a quantized student model with knowledge distillation. QLoRA [261] fine-tunes 4-bit quantized pre-trained LLM\nwith LoRA [250] using a 4-bit normal float, which shows better\nperformance over a 4-bit integer and float. 3.6.3. Pruning\nPruning is an alternative approach to quantization to compress model size, thereby reducing LLMs deployment costs\nsignificantly.",
+        "metadata": {
+          "page": 22,
+          "chunk_size": 674,
+          "source": "llm_survey.pdf",
+          "section": "3. Large Language Models",
+          "document_id": "llm_survey_2024",
+          "strategy": "paragraph"
+        },
+        "score": 0.7573040127754211,
+        "strategy": "dense",
+        "hit": true
+      },
+      {
+        "id": "para_llm_survey_2024_p16_0",
+        "source_id": "llm_survey_2024",
+        "source": "llm_survey.pdf",
+        "page": 16,
+        "text": "Figure 10: This example illustrates the PanGu-P architecture, as depicted in\nthe image sourced from [92]. 3.2.1. Instruction-Tuning with Manually Created Datasets\nNumerous hand-crafted instruction-tuning datasets with\ndifferent design choices are proposed in the literature to\ninstruction-tune LLMs. The performance of fine-tuned LLMs\ndepends on multiple factors, such as dataset, instruction diversity, prompting templates, model size, and training objectives. Keeping this in view, diverse fine-tuned models have emerged\nin the literature using manually created datasets. The models T0 [17] and mT0 (multi-lingual) [154] employ\ntemplates to convert existing datasets into prompt datasets. They have shown improvements in generalization to zero-shot\nand held-out tasks.",
+        "metadata": {
+          "source": "llm_survey.pdf",
+          "page": 16,
+          "section": "3. Large Language Models",
+          "chunk_size": 770,
+          "document_id": "llm_survey_2024",
+          "strategy": "paragraph"
+        },
+        "score": 0.7503787875175476,
+        "strategy": "dense",
+        "hit": false
+      }
+    ],
+    "context": "[para_llm_survey_2024_p2_5 | llm_survey.pdf | page 2]\nThe LLMs abilities to solve diverse tasks with human-level\nperformance come at the cost of slow training and inference,\nextensive hardware requirements, and higher running costs. Such requirements have limited their adoption and opened up\nopportunities to devise better architectures [15, 33, 34, 35]\nand training strategies [36, 37, 21, 38, 39, 40, 41]. Parameter efficient tuning [38, 41, 40], pruning [42, 43], quantization [44, 45], knowledge distillation, and context length interpolation [46, 47, 48, 49] among others are some of the methods\nwidely studied for efficient LLM utilization. Due to the success of LLMs on a wide variety of tasks, the\nresearch literature has recently experienced a large influx of\nLLM-related contributions.",
+    "context_ids": [
+      "para_llm_survey_2024_p2_5"
+    ],
+    "context_chars": 796,
+    "elapsed_ms": 5.325041999867608,
+    "hit1": false,
+    "hit3": true,
+    "context_hit": false
+  },
+  {
+    "query_id": "Q14",
+    "split": "dev",
+    "question": "What is pruning as an alternative approach to model quantization?",
+    "strategy": "dense_b800",
+    "top_k": 3,
+    "budget_chars": 800,
+    "gold": [
+      {
+        "source_id": "llm_survey_2024",
+        "page": 22,
+        "evidence": "Pruning is an alternative approach to quantization to compress model size, thereby reducing LLMs deployment costs"
+      }
+    ],
+    "results": [
+      {
+        "id": "para_llm_survey_2024_p22_0",
+        "source_id": "llm_survey_2024",
+        "source": "llm_survey.pdf",
+        "page": 22,
+        "text": "parameter-efficient fine-tuning of the pre-trained model. Similarly, parameter-efficient and quantization-aware adaptation\n(PEQA) [264] reduces the precision of fully-connected layers\nand fine-tunes only quantization scaling parameters. LLMQAT [262] generates training data from the pre-trained network\nand trains a quantized student model with knowledge distillation. QLoRA [261] fine-tunes 4-bit quantized pre-trained LLM\nwith LoRA [250] using a 4-bit normal float, which shows better\nperformance over a 4-bit integer and float. 3.6.3. Pruning\nPruning is an alternative approach to quantization to compress model size, thereby reducing LLMs deployment costs\nsignificantly.",
+        "metadata": {
+          "page": 22,
+          "section": "3. Large Language Models",
+          "chunk_size": 674,
+          "source": "llm_survey.pdf",
+          "document_id": "llm_survey_2024",
+          "strategy": "paragraph"
+        },
+        "score": 0.8750417232513428,
+        "strategy": "dense",
+        "hit": true
+      },
+      {
+        "id": "para_llm_survey_2024_p22_1",
+        "source_id": "llm_survey_2024",
+        "source": "llm_survey.pdf",
+        "page": 22,
+        "text": "Compared to task-agnostic pruning, task-specific\npruning is easily achievable with good performance, where a\nmodel is fine-tuned on the downstream task and pruned for\nfaster inference. It is possible to prune LLMs for individual\ntasks, but the cost of pruning and deploying task-specific models is high. To overcome this, many structured and unstructured\npruning methods for LLMs have been proposed to maintain reasonable performance across all tasks while shrinking the model\nsize [265, 42, 266]. Unstructured Pruning: This kind of pruning removes less important weights without maintaining any structure. Existing\nLLM pruning methods take advantage of the unique characteristics of LLMs, uncommon for smaller models, where a\nsmall subset of hidden states are activated with large magnitude [255].",
+        "metadata": {
+          "chunk_size": 798,
+          "section": "3. Large Language Models",
+          "strategy": "paragraph",
+          "source": "llm_survey.pdf",
+          "page": 22,
+          "document_id": "llm_survey_2024"
+        },
+        "score": 0.8407111167907715,
+        "strategy": "dense",
+        "hit": false
+      },
+      {
+        "id": "para_llm_survey_2024_p22_2",
+        "source_id": "llm_survey_2024",
+        "source": "llm_survey.pdf",
+        "page": 22,
+        "text": "Pruning by weights and activations (Wanda) [265]\nprunes weights in every row based on importance, calculated\nby multiplying the weights with the norm of input. The pruned\nmodel does not require fine-tuning, thereby saving computational costs. Outlier weighed layerwise sparsity (OWL) [267]\nextends Wanda with non-uniform layer pruning. It shows that\nthe number of outliers varies for different layers; therefore, the\nmodel should have variable pruning ratios for better performance for every layer. Contrastive pruning (CAP) [43] iteratively prunes the model by training the sparse model using contrastive loss between pre-trained, fine-tuned, and snapshots of\nprevious sparse models to learn task-specific and task-agnostic\nknowledge.",
+        "metadata": {
+          "section": "3. Large Language Models",
+          "page": 22,
+          "source": "llm_survey.pdf",
+          "document_id": "llm_survey_2024",
+          "chunk_size": 735,
+          "strategy": "paragraph"
+        },
+        "score": 0.8273996114730835,
+        "strategy": "dense",
+        "hit": false
+      }
+    ],
+    "context": "[para_llm_survey_2024_p22_0 | llm_survey.pdf | page 22]\nparameter-efficient fine-tuning of the pre-trained model. Similarly, parameter-efficient and quantization-aware adaptation\n(PEQA) [264] reduces the precision of fully-connected layers\nand fine-tunes only quantization scaling parameters. LLMQAT [262] generates training data from the pre-trained network\nand trains a quantized student model with knowledge distillation. QLoRA [261] fine-tunes 4-bit quantized pre-trained LLM\nwith LoRA [250] using a 4-bit normal float, which shows better\nperformance over a 4-bit integer and float. 3.6.3. Pruning\nPruning is an alternative approach to quantization to compress model size, thereby reducing LLMs deployment costs\nsignificantly.",
+    "context_ids": [
+      "para_llm_survey_2024_p22_0"
+    ],
+    "context_chars": 730,
+    "elapsed_ms": 5.218416999923647,
+    "hit1": true,
+    "hit3": true,
+    "context_hit": true
+  },
+  {
+    "query_id": "Q15",
+    "split": "dev",
+    "question": "What techniques are suggested to mitigate training instability and divergence in large models?",
+    "strategy": "dense_b800",
+    "top_k": 3,
+    "budget_chars": 800,
+    "gold": [
+      {
+        "source_id": "llm_survey_2024",
+        "page": 24,
+        "evidence": "To mitigate\nthis problem, many approaches suggest restarting training from\nan earlier checkpoint [15, 33, 91], skipping 200-500 earlier\ndata batches at the point of divergence in [15] and re-shuffling\nbatches in [91]."
+      }
+    ],
+    "results": [
+      {
+        "id": "para_llm_survey_2024_p24_0",
+        "source_id": "llm_survey_2024",
+        "source": "llm_survey.pdf",
+        "page": 24,
+        "text": "happens in the presence of gradient clipping [15]. To mitigate\nthis problem, many approaches suggest restarting training from\nan earlier checkpoint [15, 33, 91], skipping 200-500 earlier\ndata batches at the point of divergence in [15] and re-shuffling\nbatches in [91]. The embedding layer gradient shrink proves to\nfurther stabilize the training as its gradient norm is significantly\nlarger than the other layers [33]. Another suggestion to improve\ntraining stability for larger models is not to use biases in dense\nand norm layers as in [15]. Weight Initialization: It plays a significant role in model convergence and training stability. GPT-NeoX [118] initializes\nfeed-forward layers before residuals with 2 L \u221a d as in [153] and\nother layers with the small initialization scheme [298].",
+        "metadata": {
+          "document_id": "llm_survey_2024",
+          "source": "llm_survey.pdf",
+          "strategy": "paragraph",
+          "chunk_size": 789,
+          "section": "4. Model Configurations",
+          "page": 24
+        },
+        "score": 0.8369991779327393,
+        "strategy": "dense",
+        "hit": true
+      },
+      {
+        "id": "para_llm_survey_2024_p13_2",
+        "source_id": "llm_survey_2024",
+        "source": "llm_survey.pdf",
+        "page": 13,
+        "text": "Given a fixed budget of computation, more experts contribute to a better performance\nLaMDA \u2022 The model can be fine-tuned to learn to call different external information resources and tools\nAlphaCode\n\u2022 For higher effectiveness and efficiency, a transformer model can be asymmetrically constructed\nwith a shallower encoder and a deeper decoder\n\u2022 To achieve better performances, it is necessary to employ strategies such as massively scaling\nupsampling, followed by the filtering and clustering of samples into a compact set\n\u2022 The utilization of novel sampling-efficient transformer architectures designed to facilitate largescale sampling is crucial\n\u2022 Simplifying problem descriptions can effectively improve the model\u2019s performance\nChinchilla\n\u2022 The model size and the number of training tokens should be scaled proportionately: for each doubling of the model size, the number of training tokens should be doubled as well\nPaLM\n\u2022 English-centric models produce better translations when translating to English as compared to nonEnglish\n\u2022 Generalized models can have equivalent performance for language translation to specialized small\nmodels\n\u2022 Larger models have a higher percentage of training data memorization\n\u2022 Performance has not yet saturated even at 540B scale, which means larger models are likely to\nperform better\nAlexaTM\n\u2022 Encoder-decoder architecture is more suitable to train LLMs given bidirectional attention to the\ncontext than decoder-only\n\u2022 Causal Language Modeling (CLM) task can be added to benefit the model with efficient in-context\nlearning\n\u2022 Placing layer norm at the beginning of each transformer layer improves the training stability\nTable Continued on Next Page\n13",
+        "metadata": {
+          "strategy": "paragraph",
+          "source": "llm_survey.pdf",
+          "page": 13,
+          "document_id": "llm_survey_2024",
+          "section": "3. Large Language Models",
+          "chunk_size": 1687
+        },
+        "score": 0.8061490654945374,
+        "strategy": "dense",
+        "hit": false
+      },
+      {
+        "id": "para_llm_survey_2024_p10_6",
+        "source_id": "llm_survey_2024",
+        "source": "llm_survey.pdf",
+        "page": 10,
+        "text": "The paper suggested introducing alignment data with a smaller subset of previously seen\ndata during the late stage of the model pre-training, enabling the\nsmooth transition from the pre-trained stage to the final training stage. To train better instruction-following models, weaker\nmodels are trained into stronger models iteratively. The synthetic data generated by the weaker instruction-tuned model is\nused to train a base model which is later supervised fine-tuned\noutperforming the weaker model. DeepSeek [138]: DeepSeek studies the LLMs scaling laws\nin detail to determine the optimal non-embedding model size\nand training data. The experiments were performed for 8 budgets ranging from 1e17 to 3e20 training FLOPs. Each compute\nbudget was tested against ten different models/data scales.",
+        "metadata": {
+          "section": "3. Large Language Models",
+          "document_id": "llm_survey_2024",
+          "page": 10,
+          "source": "llm_survey.pdf",
+          "strategy": "paragraph",
+          "chunk_size": 794
+        },
+        "score": 0.8001440763473511,
+        "strategy": "dense",
+        "hit": false
+      }
+    ],
+    "context": "",
+    "context_ids": [],
+    "context_chars": 0,
+    "elapsed_ms": 5.299624999906882,
+    "hit1": true,
+    "hit3": true,
+    "context_hit": false
+  }
+]

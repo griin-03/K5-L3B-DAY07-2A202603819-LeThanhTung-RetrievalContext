@@ -1,0 +1,796 @@
+[
+  {
+    "query_id": "Q16",
+    "split": "test",
+    "question": "What is the PAWS dataset designed to evaluate in multilingual NLP?",
+    "status": "answered",
+    "answer": "D\u1ef1a tr\u00ean t\u00e0i li\u1ec7u kh\u1ea3o s\u00e1t LLMs: PAWS [430] dataset for paraphrase identification. It includes examples in seven languages and is designed to evaluate the performance of cross-lingual paraphrase identification models. 5.2.11. Truthfulness Truthful-QA [405]: A unique benchmark that measures a language model\u2019s truthfulness when generating answers. The dataset includes questions acro [para_llm_survey_2024_p32_0]",
+    "citations": [
+      "para_llm_survey_2024_p32_0"
+    ],
+    "events": [
+      {
+        "event": "search",
+        "query": "the PAWS dataset designed to evaluate in multilingual NLP",
+        "filter": null,
+        "results": [
+          {
+            "id": "para_llm_survey_2024_p31_7",
+            "source_id": "llm_survey_2024",
+            "source": "llm_survey.pdf",
+            "page": 31,
+            "text": "PAWS-X [399]: PAWS-X, or Cross-lingual Paraphrase Adversaries from Word Scrambling, is a multilingual version of the\n31",
+            "metadata": {
+              "source": "llm_survey.pdf",
+              "chunk_size": 119,
+              "section": "5. Datasets and Evaluation",
+              "strategy": "paragraph",
+              "page": 31,
+              "document_id": "llm_survey_2024"
+            },
+            "score": 0.03278688524590164,
+            "strategy": "hybrid_rrf"
+          },
+          {
+            "id": "para_llm_survey_2024_p7_6",
+            "source_id": "llm_survey_2024",
+            "source": "llm_survey.pdf",
+            "page": 7,
+            "text": "Pre-Trained LLMs\nHere, we provide summaries of various well-known pretrained LLMs with significant discoveries, changing the course\nof research and development in NLP. These LLMs have considerably improved the performance in NLU and NLG domains,\nand are widely fine-tuned for downstream tasks. Moreover, We\nalso identify key findings and insights of pre-trained LLMs in\nTable 1 and 2 that improve their performance. 3.1.1. General Purpose\nT5 [10]: An encoder-decoder model employing a unified textto-text training for all NLP problems is shown in Figure 7. T5\nplaces layer normalization outside the residual path in a conventional transformer model [64].",
+            "metadata": {
+              "chunk_size": 654,
+              "document_id": "llm_survey_2024",
+              "source": "llm_survey.pdf",
+              "strategy": "paragraph",
+              "section": "3. Large Language Models",
+              "page": 7
+            },
+            "score": 0.03055037313432836,
+            "strategy": "hybrid_rrf"
+          },
+          {
+            "id": "para_llm_survey_2024_p32_0",
+            "source_id": "llm_survey_2024",
+            "source": "llm_survey.pdf",
+            "page": 32,
+            "text": "PAWS [430] dataset for paraphrase identification. It includes\nexamples in seven languages and is designed to evaluate the\nperformance of cross-lingual paraphrase identification models. 5.2.11. Truthfulness\nTruthful-QA [405]: A unique benchmark that measures a\nlanguage model\u2019s truthfulness when generating answers. The\ndataset includes questions across various categories like health,\nlaw, and politics, some designed to test the model against common human misconceptions. 5.2.12. Biases and Ethics in AI\nETHOS [408]: ETHOS is a hate speech detection dataset\nbuilt from YouTube and Reddit comments. It is a tool in the\nfight against online hate speech, offering binary and multi-label\nvariants for robust content moderation.",
+            "metadata": {
+              "page": 32,
+              "source": "llm_survey.pdf",
+              "section": "6. Applications",
+              "document_id": "llm_survey_2024",
+              "strategy": "paragraph",
+              "chunk_size": 724
+            },
+            "score": 0.0304147465437788,
+            "strategy": "hybrid_rrf"
+          },
+          {
+            "id": "para_llm_survey_2024_p28_3",
+            "source_id": "llm_survey_2024",
+            "source": "llm_survey.pdf",
+            "page": 28,
+            "text": "Wikitext103 [318]: With over 100 million tokens from\nWikipedia\u2019s top articles, this dataset is a rich resource for tasks\nthat require understanding long-term dependencies, such as language modeling and translation. PG19 [319]: This is a digital library of diverse books from\nProject Gutenberg. It is specifically designed to facilitate research in unsupervised learning and language modeling, with a\nspecial focus on long-form content. C4 [10]: A clean, multilingual dataset, C4 offers billions of tokens from web-crawled data. It is a comprehensive resource for\ntraining advanced Transformer models on various languages. LCQMC [320]: The Large-scale Chinese Question Matching\nCorpus (LCQMC) is a dataset for evaluating the performance\nof models in semantic matching tasks.",
+            "metadata": {
+              "chunk_size": 773,
+              "page": 28,
+              "document_id": "llm_survey_2024",
+              "source": "llm_survey.pdf",
+              "strategy": "paragraph",
+              "section": "5. Datasets and Evaluation"
+            },
+            "score": 0.029236022193768675,
+            "strategy": "hybrid_rrf"
+          },
+          {
+            "id": "para_llm_survey_2024_p8_0",
+            "source_id": "llm_survey_2024",
+            "source": "llm_survey.pdf",
+            "page": 8,
+            "text": "Figure 7: Unified text-to-text training example, source image from [10]. Figure 8: The image is the article of [108], showing an example of PanGu-\u03b1\narchitecture. models improves with the scale and is competitive with the finetuned models. mT5 [11]: A multilingual T5 model [10] trained on the mC4\ndataset with 101 languages. The dataset is extracted from the\npublic common crawl scrape. The model uses a larger vocabulary size of 250,000 to cover multiple languages. To avoid\nover-fitting or under-fitting for a language, mT5 employs a data\nsampling procedure to select samples from all languages. The\npaper suggests using a small amount of pre-training datasets,\nincluding all languages when fine-tuning for a task using English language data.",
+            "metadata": {
+              "strategy": "paragraph",
+              "document_id": "llm_survey_2024",
+              "source": "llm_survey.pdf",
+              "page": 8,
+              "chunk_size": 744,
+              "section": "3. Large Language Models"
+            },
+            "score": 0.028006267136701922,
+            "strategy": "hybrid_rrf"
+          }
+        ],
+        "context": "[para_llm_survey_2024_p31_7 | llm_survey.pdf | page 31]\nPAWS-X [399]: PAWS-X, or Cross-lingual Paraphrase Adversaries from Word Scrambling, is a multilingual version of the\n31\n\n[para_llm_survey_2024_p7_6 | llm_survey.pdf | page 7]\nPre-Trained LLMs\nHere, we provide summaries of various well-known pretrained LLMs with significant discoveries, changing the course\nof research and development in NLP. These LLMs have considerably improved the performance in NLU and NLG domains,\nand are widely fine-tuned for downstream tasks. Moreover, We\nalso identify key findings and insights of pre-trained LLMs in\nTable 1 and 2 that improve their performance. 3.1.1. General Purpose\nT5 [10]: An encoder-decoder model employing a unified textto-text training for all NLP problems is shown in Figure 7. T5\nplaces layer normalization outside the residual path in a conventional transformer model [64].\n\n[para_llm_survey_2024_p32_0 | llm_survey.pdf | page 32]\nPAWS [430] dataset for paraphrase identification. It includes\nexamples in seven languages and is designed to evaluate the\nperformance of cross-lingual paraphrase identification models. 5.2.11. Truthfulness\nTruthful-QA [405]: A unique benchmark that measures a\nlanguage model\u2019s truthfulness when generating answers. The\ndataset includes questions across various categories like health,\nlaw, and politics, some designed to test the model against common human misconceptions. 5.2.12. Biases and Ethics in AI\nETHOS [408]: ETHOS is a hate speech detection dataset\nbuilt from YouTube and Reddit comments. It is a tool in the\nfight against online hate speech, offering binary and multi-label\nvariants for robust content moderation.",
+        "context_ids": [
+          "para_llm_survey_2024_p31_7",
+          "para_llm_survey_2024_p7_6",
+          "para_llm_survey_2024_p32_0"
+        ]
+      },
+      {
+        "event": "answer"
+      }
+    ],
+    "elapsed_ms": 8.26120900001115
+  },
+  {
+    "query_id": "Q17",
+    "split": "test",
+    "question": "What specific capability does the Truthful-QA benchmark measure?",
+    "status": "answered",
+    "answer": "D\u1ef1a tr\u00ean t\u00e0i li\u1ec7u kh\u1ea3o s\u00e1t LLMs: It is designed to provide a rigorous test of language understanding and requires significant progress in areas like sample-efficient, transfer, multi-task, and unsupervised or self-supervised learning. BIG-bench [308]: The BIG-bench (Behavior of Intelligent Generative Models Benchmark) is a large-scale benchmark designed to test the abilities of LL [para_llm_survey_2024_p26_5]",
+    "citations": [
+      "para_llm_survey_2024_p26_5"
+    ],
+    "events": [
+      {
+        "event": "search",
+        "query": "What specific capability does the Truthful-QA benchmark measure",
+        "filter": null,
+        "results": [
+          {
+            "id": "para_llm_survey_2024_p26_5",
+            "source_id": "llm_survey_2024",
+            "source": "llm_survey.pdf",
+            "page": 26,
+            "text": "It is\ndesigned to provide a rigorous test of language understanding\nand requires significant progress in areas like sample-efficient,\ntransfer, multi-task, and unsupervised or self-supervised learning. BIG-bench [308]: The BIG-bench (Behavior of Intelligent\nGenerative Models Benchmark) is a large-scale benchmark designed to test the abilities of LLMs across a wide range of\ntasks, including reasoning, creativity, ethics, and understanding\nof specific domains. GLUE [309]: The General Language Understanding Evaluation (GLUE) benchmark is a collection of resources for training, evaluating, and analyzing natural language understanding\n26",
+            "metadata": {
+              "page": 26,
+              "source": "llm_survey.pdf",
+              "document_id": "llm_survey_2024",
+              "strategy": "paragraph",
+              "chunk_size": 640,
+              "section": "5. Datasets and Evaluation"
+            },
+            "score": 0.03200204813108039,
+            "strategy": "hybrid_rrf"
+          },
+          {
+            "id": "para_llm_survey_2024_p31_6",
+            "source_id": "llm_survey_2024",
+            "source": "llm_survey.pdf",
+            "page": 31,
+            "text": "HumanEval [141]: A dataset for evaluating the problemsolving ability of AI models, which includes a diverse set of\ntasks that require various cognitive abilities, making it a comprehensive tool for assessing general intelligence in AI. StrategyQA [349]: A question-answering dataset that requires reasoning over multiple pieces of evidence to evaluate\nthe strategic reasoning ability of AI models, pushing the boundaries of what machines can understand and answer. 5.2.10. Cross-Lingual Understanding\nXNLI [398]: A cross-lingual benchmark, XNLI extends the\nMultiNLI [429] corpus to 15 languages, including low-resource\nones like Urdu. It tests models on cross-lingual sentence understanding, with 112,500 annotated pairs across three categories:\nentailment, contradiction, and neutral.",
+            "metadata": {
+              "chunk_size": 785,
+              "section": "5. Datasets and Evaluation",
+              "strategy": "paragraph",
+              "page": 31,
+              "document_id": "llm_survey_2024",
+              "source": "llm_survey.pdf"
+            },
+            "score": 0.03177805800756621,
+            "strategy": "hybrid_rrf"
+          },
+          {
+            "id": "para_llm_survey_2024_p33_0",
+            "source_id": "llm_survey_2024",
+            "source": "llm_survey.pdf",
+            "page": 33,
+            "text": "Table 12: Performance comparison of top performing LLMs across various NLU and NLG tasks. Here, \u201cN-Shots\u201d indicate the number of example prompts provided\nto the model during the evaluation, representing its capability in few-shot or zero-shot learning settings, \u201cf\u201d represents the fine-tuned version, and \u201cB\u201d represents the\nbenchmark.",
+            "metadata": {
+              "source": "llm_survey.pdf",
+              "document_id": "llm_survey_2024",
+              "chunk_size": 334,
+              "page": 33,
+              "strategy": "paragraph",
+              "section": "7. Challenges and Future Directions"
+            },
+            "score": 0.031054405392392875,
+            "strategy": "hybrid_rrf"
+          },
+          {
+            "id": "para_llm_survey_2024_p30_0",
+            "source_id": "llm_survey_2024",
+            "source": "llm_survey.pdf",
+            "page": 30,
+            "text": "Table 10: An illustration of training datasets and evaluation tasks employed by pre-trained LLMs. Here, \u201cQA\u201d is question-answering, \u201cClf\u201d is classification, \u201cNLI\u201d\nis natural language inference, \u201cMT\u201d is machine translation, \u201cRC\u201d is reading comprehension, \u201cCR\u201d is commonsense reasoning, \u201cMR\u201d is mathematical reasoning,\n\u201cMem.\u201d is memorization. Benchmark\nModels Training Dataset BIG- bench MMLU Super GLUE QA Clf NLI MT Cloze/ Completion RC CR MR Coding\nTruthful/\nBias/\nToxicity/\nMem.",
+            "metadata": {
+              "strategy": "paragraph",
+              "document_id": "llm_survey_2024",
+              "chunk_size": 480,
+              "section": "5. Datasets and Evaluation",
+              "source": "llm_survey.pdf",
+              "page": 30
+            },
+            "score": 0.030886196246139225,
+            "strategy": "hybrid_rrf"
+          },
+          {
+            "id": "para_llm_survey_2024_p26_4",
+            "source_id": "llm_survey_2024",
+            "source": "llm_survey.pdf",
+            "page": 26,
+            "text": "Moreover, we show a detailed overview of the training datasets and evaluation tasks and benchmarks used by various pre-trained LLMs in Table 10 and fine-tuned LLMs in Table 11. We also compare the top-performing LLMs in various\nNLP tasks in Table 12. 5.2.1. Multi-task\nMMLU [307]: A benchmark that measures the knowledge\nacquired by models during pretraining and evaluates models in\nzero-shot and few-shot settings across 57 subjects, testing both\nworld knowledge and problem-solving ability. SuperGLUE [2]: A more challenging and diverse successor\nto the GLUE [309] benchmark, SuperGLUE includes a variety\nof language understanding tasks, such as question answering,\nnatural language inference, and co-reference resolution.",
+            "metadata": {
+              "source": "llm_survey.pdf",
+              "strategy": "paragraph",
+              "section": "5. Datasets and Evaluation",
+              "page": 26,
+              "document_id": "llm_survey_2024",
+              "chunk_size": 724
+            },
+            "score": 0.03057889822595705,
+            "strategy": "hybrid_rrf"
+          }
+        ],
+        "context": "[para_llm_survey_2024_p26_5 | llm_survey.pdf | page 26]\nIt is\ndesigned to provide a rigorous test of language understanding\nand requires significant progress in areas like sample-efficient,\ntransfer, multi-task, and unsupervised or self-supervised learning. BIG-bench [308]: The BIG-bench (Behavior of Intelligent\nGenerative Models Benchmark) is a large-scale benchmark designed to test the abilities of LLMs across a wide range of\ntasks, including reasoning, creativity, ethics, and understanding\nof specific domains. GLUE [309]: The General Language Understanding Evaluation (GLUE) benchmark is a collection of resources for training, evaluating, and analyzing natural language understanding\n26\n\n[para_llm_survey_2024_p31_6 | llm_survey.pdf | page 31]\nHumanEval [141]: A dataset for evaluating the problemsolving ability of AI models, which includes a diverse set of\ntasks that require various cognitive abilities, making it a comprehensive tool for assessing general intelligence in AI. StrategyQA [349]: A question-answering dataset that requires reasoning over multiple pieces of evidence to evaluate\nthe strategic reasoning ability of AI models, pushing the boundaries of what machines can understand and answer. 5.2.10. Cross-Lingual Understanding\nXNLI [398]: A cross-lingual benchmark, XNLI extends the\nMultiNLI [429] corpus to 15 languages, including low-resource\nones like Urdu. It tests models on cross-lingual sentence understanding, with 112,500 annotated pairs across three categories:\nentailment, contradiction, and neutral.\n\n[para_llm_survey_2024_p33_0 | llm_survey.pdf | page 33]\nTable 12: Performance comparison of top performing LLMs across various NLU and NLG tasks. Here, \u201cN-Shots\u201d indicate the number of example prompts provided\nto the model during the evaluation, representing its capability in few-shot or zero-shot learning settings, \u201cf\u201d represents the fine-tuned version, and \u201cB\u201d represents the\nbenchmark.",
+        "context_ids": [
+          "para_llm_survey_2024_p26_5",
+          "para_llm_survey_2024_p31_6",
+          "para_llm_survey_2024_p33_0"
+        ]
+      },
+      {
+        "event": "answer"
+      }
+    ],
+    "elapsed_ms": 6.182542000033209
+  },
+  {
+    "query_id": "Q18",
+    "split": "test",
+    "question": "Why is research focusing on making LLMs more explainable?",
+    "status": "answered",
+    "answer": "D\u1ef1a tr\u00ean t\u00e0i li\u1ec7u kh\u1ea3o s\u00e1t LLMs: This collaborative effort between legal experts and LLMs has proved to be effective in analyzing legal texts such as court opinions on theft, improving both the efficiency and quality of the research [466]. Additionally, LLMs have been evaluated for their ability to generate explanations of legal terms, focusing on improving factual accuracy and re [para_llm_survey_2024_p33_4]",
+    "citations": [
+      "para_llm_survey_2024_p33_4"
+    ],
+    "events": [
+      {
+        "event": "search",
+        "query": "research focusing on making LLMs more explainable",
+        "filter": null,
+        "results": [
+          {
+            "id": "para_llm_survey_2024_p33_4",
+            "source_id": "llm_survey_2024",
+            "source": "llm_survey.pdf",
+            "page": 33,
+            "text": "This collaborative effort between legal experts and LLMs has\nproved to be effective in analyzing legal texts such as court\nopinions on theft, improving both the efficiency and quality of\nthe research [466]. Additionally, LLMs have been evaluated for\ntheir ability to generate explanations of legal terms, focusing\non improving factual accuracy and relevance by incorporating\nsentences from case law. By feeding relevant case law into the\nLLM, the augmented models can generate higher-quality explanations with less factually incorrect information [467]. Moreover, LLMs can be trained with specialized domain knowledge\nto perform legal reasoning tasks [468] and answer legal questions [469].",
+            "metadata": {
+              "source": "llm_survey.pdf",
+              "document_id": "llm_survey_2024",
+              "chunk_size": 690,
+              "strategy": "paragraph",
+              "section": "7. Challenges and Future Directions",
+              "page": 33
+            },
+            "score": 0.03252247488101534,
+            "strategy": "hybrid_rrf"
+          },
+          {
+            "id": "para_llm_survey_2024_p1_1",
+            "source_id": "llm_survey_2024",
+            "source": "llm_survey.pdf",
+            "page": 1,
+            "text": "This success of LLMs has led to a large influx of research contributions in this direction. These works encompass diverse\ntopics such as architectural innovations, better training strategies, context length improvements, fine-tuning, multi-modal LLMs,\nrobotics, datasets, benchmarking, efficiency, and more. With the rapid development of techniques and regular breakthroughs in\nLLM research, it has become considerably challenging to perceive the bigger picture of the advances in this direction. Considering\nthe rapidly emerging plethora of literature on LLMs, it is imperative that the research community is able to benefit from a concise\nyet comprehensive overview of the recent developments in this field.",
+            "metadata": {
+              "document_id": "llm_survey_2024",
+              "strategy": "paragraph",
+              "section": "1. Introduction",
+              "page": 1,
+              "chunk_size": 709,
+              "source": "llm_survey.pdf"
+            },
+            "score": 0.0315136476426799,
+            "strategy": "hybrid_rrf"
+          },
+          {
+            "id": "para_llm_survey_2024_p3_0",
+            "source_id": "llm_survey_2024",
+            "source": "llm_survey.pdf",
+            "page": 3,
+            "text": "Figure 3: A broader overview of LLMs, dividing LLMs into seven branches: 1. Pre-Training 2. Fine-Tuning 3. Efficient 4. Inference 5. Evaluation 6. Applications\n7. Challenges\nmulti-modal LLMs, augmented LLMs, LLMs-powered\nagents, datasets, evaluation, etc. We loosely follow the existing terminology to ensure a standardized outlook of this research direction. For instance, following [50], our survey discusses pre-trained LLMs with 10B\nparameters or more. We refer the readers interested in smaller\npre-trained models to [51, 52, 53]. The organization of this paper is as follows. Section 2 discusses\nthe background of LLMs. Section 3 focuses on LLMs overview,\narchitectures, training pipelines and strategies, fine-tuning, and\nutilization in different domains.",
+            "metadata": {
+              "page": 3,
+              "source": "llm_survey.pdf",
+              "document_id": "llm_survey_2024",
+              "chunk_size": 762,
+              "strategy": "paragraph",
+              "section": "6. Applications"
+            },
+            "score": 0.031009615384615385,
+            "strategy": "hybrid_rrf"
+          },
+          {
+            "id": "para_llm_survey_2024_p2_6",
+            "source_id": "llm_survey_2024",
+            "source": "llm_survey.pdf",
+            "page": 2,
+            "text": "Researchers have organized the\nLLMs literature in surveys [50, 51, 52, 53], and topic-specific\nsurveys in [54, 55, 56, 57, 58]. In contrast to these surveys, our\ncontribution focuses on providing a comprehensive yet concise\noverview of the general direction of LLM research. This article summarizes architectural and training details of pre-trained\nLLMs and delves deeper into the details of concepts like finetuning, multi-modal LLMs, augmented LLMs, datasets, evaluation, applications, challenges, and others to provide a selfcontained comprehensive overview. Our key contributions are\nsummarized as follows. \u2022 We present a survey on the developments in LLM research,\nproviding a concise, comprehensive overview of the direction.",
+            "metadata": {
+              "strategy": "paragraph",
+              "section": "1. Introduction",
+              "document_id": "llm_survey_2024",
+              "page": 2,
+              "source": "llm_survey.pdf",
+              "chunk_size": 731
+            },
+            "score": 0.030679156908665108,
+            "strategy": "hybrid_rrf"
+          },
+          {
+            "id": "para_llm_survey_2024_p1_2",
+            "source_id": "llm_survey_2024",
+            "source": "llm_survey.pdf",
+            "page": 1,
+            "text": "This article provides an overview of the literature on a broad\nrange of LLM-related concepts. Our self-contained comprehensive overview of LLMs discusses relevant background concepts\nalong with covering the advanced topics at the frontier of research in LLMs. This review article is intended to provide not only a\nsystematic survey but also a quick, comprehensive reference for the researchers and practitioners to draw insights from extensive,\ninformative summaries of the existing works to advance the LLM research. Keywords:\nLarge Language Models, LLMs, chatGPT, Augmented LLMs, Multimodal LLMs, LLM training, LLM Benchmarking\n1. Introduction\nLanguage plays a fundamental role in facilitating communication and self-expression for humans and their interaction\nwith machines.",
+            "metadata": {
+              "page": 1,
+              "source": "llm_survey.pdf",
+              "section": "1. Introduction",
+              "strategy": "paragraph",
+              "document_id": "llm_survey_2024",
+              "chunk_size": 777
+            },
+            "score": 0.029211087420042643,
+            "strategy": "hybrid_rrf"
+          }
+        ],
+        "context": "[para_llm_survey_2024_p33_4 | llm_survey.pdf | page 33]\nThis collaborative effort between legal experts and LLMs has\nproved to be effective in analyzing legal texts such as court\nopinions on theft, improving both the efficiency and quality of\nthe research [466]. Additionally, LLMs have been evaluated for\ntheir ability to generate explanations of legal terms, focusing\non improving factual accuracy and relevance by incorporating\nsentences from case law. By feeding relevant case law into the\nLLM, the augmented models can generate higher-quality explanations with less factually incorrect information [467]. Moreover, LLMs can be trained with specialized domain knowledge\nto perform legal reasoning tasks [468] and answer legal questions [469].\n\n[para_llm_survey_2024_p1_1 | llm_survey.pdf | page 1]\nThis success of LLMs has led to a large influx of research contributions in this direction. These works encompass diverse\ntopics such as architectural innovations, better training strategies, context length improvements, fine-tuning, multi-modal LLMs,\nrobotics, datasets, benchmarking, efficiency, and more. With the rapid development of techniques and regular breakthroughs in\nLLM research, it has become considerably challenging to perceive the bigger picture of the advances in this direction. Considering\nthe rapidly emerging plethora of literature on LLMs, it is imperative that the research community is able to benefit from a concise\nyet comprehensive overview of the recent developments in this field.\n\n[para_llm_survey_2024_p3_0 | llm_survey.pdf | page 3]\nFigure 3: A broader overview of LLMs, dividing LLMs into seven branches: 1. Pre-Training 2. Fine-Tuning 3. Efficient 4. Inference 5. Evaluation 6. Applications\n7. Challenges\nmulti-modal LLMs, augmented LLMs, LLMs-powered\nagents, datasets, evaluation, etc. We loosely follow the existing terminology to ensure a standardized outlook of this research direction. For instance, following [50], our survey discusses pre-trained LLMs with 10B\nparameters or more. We refer the readers interested in smaller\npre-trained models to [51, 52, 53]. The organization of this paper is as follows. Section 2 discusses\nthe background of LLMs. Section 3 focuses on LLMs overview,\narchitectures, training pipelines and strategies, fine-tuning, and\nutilization in different domains.",
+        "context_ids": [
+          "para_llm_survey_2024_p33_4",
+          "para_llm_survey_2024_p1_1",
+          "para_llm_survey_2024_p3_0"
+        ]
+      },
+      {
+        "event": "answer"
+      }
+    ],
+    "elapsed_ms": 5.3784579999955895
+  },
+  {
+    "query_id": "Q19",
+    "split": "test",
+    "question": "Which tokenization schemes are commonly used in modern large language models?",
+    "status": "answered",
+    "answer": "D\u1ef1a tr\u00ean t\u00e0i li\u1ec7u kh\u1ea3o s\u00e1t LLMs: 2. Background We provide the relevant background to understand the fundamentals related to LLMs in this section. We briefly discuss necessary components in LLMs and refer the readers interested in details to the original works. 2.1. Tokenization Tokenization [59] is an essential pre-processing step in LLM training that parses the text into non-deco [para_llm_survey_2024_p4_0]",
+    "citations": [
+      "para_llm_survey_2024_p4_0"
+    ],
+    "events": [
+      {
+        "event": "search",
+        "query": "tokenization schemes are commonly used in modern large language models",
+        "filter": null,
+        "results": [
+          {
+            "id": "para_llm_survey_2024_p4_0",
+            "source_id": "llm_survey_2024",
+            "source": "llm_survey.pdf",
+            "page": 4,
+            "text": "2. Background\nWe provide the relevant background to understand the fundamentals related to LLMs in this section. We briefly discuss\nnecessary components in LLMs and refer the readers interested\nin details to the original works. 2.1. Tokenization\nTokenization [59] is an essential pre-processing step in\nLLM training that parses the text into non-decomposing units\ncalled tokens. Tokens can be characters, subwords [60], symbols [61], or words, depending on the tokenization process. Some of the commonly used tokenization schemes in LLMs\ninclude wordpiece [62], byte pair encoding (BPE) [61], and unigramLM [60]. Readers are encouraged to refer to [63] for a\ndetailed survey. 2.2. Encoding Positions\nThe transformer processes input sequences in parallel and\nindependently of each other.",
+            "metadata": {
+              "page": 4,
+              "source": "llm_survey.pdf",
+              "strategy": "paragraph",
+              "document_id": "llm_survey_2024",
+              "chunk_size": 786,
+              "section": "2. Background"
+            },
+            "score": 0.032266458495966696,
+            "strategy": "hybrid_rrf"
+          },
+          {
+            "id": "para_llm_survey_2024_p8_1",
+            "source_id": "llm_survey_2024",
+            "source": "llm_survey.pdf",
+            "page": 8,
+            "text": "This allows the model to generate correct\nnon-English outputs. PanGu-\u03b1 [108]: An autoregressive model that has a query\nlayer at the end of standard transformer layers, example shown\nin Figure 8, to predict the next token. Its structure is similar to\nthe transformer layer but with an additional embedding for the\nnext position in the attention mechanism, given in Eq. 3. a = pnWq h Wk h T HT L (3)\nCPM-2 [12]: Cost-efficient Pre-trained language Models\n(CPM-2) pre-trains bilingual (English and Chinese) 11B and\n198B mixture-of-experts (MoE) models on the WuDaoCorpus [109] dataset. The tokenization process removes \u201c_\u201d white\nspace tokens in the sentencepiece tokenizer.",
+            "metadata": {
+              "page": 8,
+              "strategy": "paragraph",
+              "section": "3. Large Language Models",
+              "source": "llm_survey.pdf",
+              "chunk_size": 670,
+              "document_id": "llm_survey_2024"
+            },
+            "score": 0.03131881575727918,
+            "strategy": "hybrid_rrf"
+          },
+          {
+            "id": "para_llm_survey_2024_p15_0",
+            "source_id": "llm_survey_2024",
+            "source": "llm_survey.pdf",
+            "page": 15,
+            "text": "Table 2: Key insights and findings from the study of instruction-tuned Large Language Models.",
+            "metadata": {
+              "strategy": "paragraph",
+              "page": 15,
+              "document_id": "llm_survey_2024",
+              "source": "llm_survey.pdf",
+              "chunk_size": 93,
+              "section": "3. Large Language Models"
+            },
+            "score": 0.030834914611005692,
+            "strategy": "hybrid_rrf"
+          },
+          {
+            "id": "para_llm_survey_2024_p2_1",
+            "source_id": "llm_survey_2024",
+            "source": "llm_survey.pdf",
+            "page": 2,
+            "text": "Models\non the upper half signify open-source availability, whereas those on the bottom are closed-source. The chart illustrates the increasing trend towards instruction-tuned\nand open-source models, highlighting the evolving landscape and trends in natural language processing research. Language Models (LLMs) have emerged as cutting-edge artificial intelligence systems that can process and generate text\nwith coherent communication [4] and generalize to multiple\ntasks [5, 6]. The historical progress in natural language processing (NLP)\nevolved from statistical to neural language modeling and then\nfrom pre-trained language models (PLMs) to LLMs.",
+            "metadata": {
+              "source": "llm_survey.pdf",
+              "document_id": "llm_survey_2024",
+              "chunk_size": 650,
+              "strategy": "paragraph",
+              "section": "1. Introduction",
+              "page": 2
+            },
+            "score": 0.028404512489927477,
+            "strategy": "hybrid_rrf"
+          },
+          {
+            "id": "para_llm_survey_2024_p1_0",
+            "source_id": "llm_survey_2024",
+            "source": "llm_survey.pdf",
+            "page": 1,
+            "text": "A Comprehensive Overview of Large Language Models\nHumza Naveeda, Asad Ullah Khanb,\u2217, Shi Qiuc,\u2217, Muhammad Saqibd,e,\u2217, Saeed Anwarf,g, Muhammad Usmanf,g, Naveed Akhtarh,j,\nNick Barnesi, Ajmal Mianj\naThe University of Sydney, Sydney, Australia\nbUniversity of Engineering and Technology (UET), Lahore, Pakistan\ncThe Chinese University of Hong Kong (CUHK), HKSAR, China\ndUniversity of Technology Sydney (UTS), Sydney, Australia\neCommonwealth Scientific and Industrial Research Organisation (CSIRO), Sydney, Australia\nfKing Fahd University of Petroleum and Minerals (KFUPM), Dhahran, Saudi Arabia\ngSDAIA-KFUPM Joint Research Center for Artificial Intelligence (JRCAI), Dhahran, Saudi Arabia\nhThe University of Melbourne (UoM), Melbourne, Australia\niAustralian National University (ANU), Canberra, Australia\njThe University of Western Australia (UWA), Perth, Australia\nAbstract\nLarge Language Models (LLMs) have recently demonstrated remarkable capabilities in natural language processing tasks and\nbeyond.",
+            "metadata": {
+              "source": "llm_survey.pdf",
+              "section": "1. Introduction",
+              "chunk_size": 1000,
+              "page": 1,
+              "strategy": "paragraph",
+              "document_id": "llm_survey_2024"
+            },
+            "score": 0.016129032258064516,
+            "strategy": "hybrid_rrf"
+          }
+        ],
+        "context": "[para_llm_survey_2024_p4_0 | llm_survey.pdf | page 4]\n2. Background\nWe provide the relevant background to understand the fundamentals related to LLMs in this section. We briefly discuss\nnecessary components in LLMs and refer the readers interested\nin details to the original works. 2.1. Tokenization\nTokenization [59] is an essential pre-processing step in\nLLM training that parses the text into non-decomposing units\ncalled tokens. Tokens can be characters, subwords [60], symbols [61], or words, depending on the tokenization process. Some of the commonly used tokenization schemes in LLMs\ninclude wordpiece [62], byte pair encoding (BPE) [61], and unigramLM [60]. Readers are encouraged to refer to [63] for a\ndetailed survey. 2.2. Encoding Positions\nThe transformer processes input sequences in parallel and\nindependently of each other.\n\n[para_llm_survey_2024_p8_1 | llm_survey.pdf | page 8]\nThis allows the model to generate correct\nnon-English outputs. PanGu-\u03b1 [108]: An autoregressive model that has a query\nlayer at the end of standard transformer layers, example shown\nin Figure 8, to predict the next token. Its structure is similar to\nthe transformer layer but with an additional embedding for the\nnext position in the attention mechanism, given in Eq. 3. a = pnWq h Wk h T HT L (3)\nCPM-2 [12]: Cost-efficient Pre-trained language Models\n(CPM-2) pre-trains bilingual (English and Chinese) 11B and\n198B mixture-of-experts (MoE) models on the WuDaoCorpus [109] dataset. The tokenization process removes \u201c_\u201d white\nspace tokens in the sentencepiece tokenizer.\n\n[para_llm_survey_2024_p15_0 | llm_survey.pdf | page 15]\nTable 2: Key insights and findings from the study of instruction-tuned Large Language Models.",
+        "context_ids": [
+          "para_llm_survey_2024_p4_0",
+          "para_llm_survey_2024_p8_1",
+          "para_llm_survey_2024_p15_0"
+        ]
+      },
+      {
+        "event": "answer"
+      }
+    ],
+    "elapsed_ms": 5.527833000087412
+  },
+  {
+    "query_id": "Q20",
+    "split": "test",
+    "question": "How does LLM-QAT train quantized student models?",
+    "status": "answered",
+    "answer": "D\u1ef1a tr\u00ean t\u00e0i li\u1ec7u kh\u1ea3o s\u00e1t LLMs: parameter-efficient fine-tuning of the pre-trained model. Similarly, parameter-efficient and quantization-aware adaptation (PEQA) [264] reduces the precision of fully-connected layers and fine-tunes only quantization scaling parameters. LLMQAT [262] generates training data from the pre-trained network and trains a quantized student model with knowl [para_llm_survey_2024_p22_0]",
+    "citations": [
+      "para_llm_survey_2024_p22_0"
+    ],
+    "events": [
+      {
+        "event": "search",
+        "query": "LLM-QAT train quantized student models",
+        "filter": null,
+        "results": [
+          {
+            "id": "para_llm_survey_2024_p21_6",
+            "source_id": "llm_survey_2024",
+            "source": "llm_survey.pdf",
+            "page": 21,
+            "text": "Quantization-Aware Training: To compensate for performance degradation, a quantized model is fine-tuned in\nquantization-aware training (QAT) [260, 261, 262]. Alpha Tuning quantizes the model using binary coding quantization (BCQ) [263] and fine-tunes only quantization scaling factors. This approach improves performance over\n21",
+            "metadata": {
+              "document_id": "llm_survey_2024",
+              "strategy": "paragraph",
+              "source": "llm_survey.pdf",
+              "chunk_size": 328,
+              "section": "3. Large Language Models",
+              "page": 21
+            },
+            "score": 0.032018442622950824,
+            "strategy": "hybrid_rrf"
+          },
+          {
+            "id": "para_llm_survey_2024_p22_0",
+            "source_id": "llm_survey_2024",
+            "source": "llm_survey.pdf",
+            "page": 22,
+            "text": "parameter-efficient fine-tuning of the pre-trained model. Similarly, parameter-efficient and quantization-aware adaptation\n(PEQA) [264] reduces the precision of fully-connected layers\nand fine-tunes only quantization scaling parameters. LLMQAT [262] generates training data from the pre-trained network\nand trains a quantized student model with knowledge distillation. QLoRA [261] fine-tunes 4-bit quantized pre-trained LLM\nwith LoRA [250] using a 4-bit normal float, which shows better\nperformance over a 4-bit integer and float. 3.6.3. Pruning\nPruning is an alternative approach to quantization to compress model size, thereby reducing LLMs deployment costs\nsignificantly.",
+            "metadata": {
+              "strategy": "paragraph",
+              "source": "llm_survey.pdf",
+              "document_id": "llm_survey_2024",
+              "section": "3. Large Language Models",
+              "chunk_size": 674,
+              "page": 22
+            },
+            "score": 0.0315136476426799,
+            "strategy": "hybrid_rrf"
+          },
+          {
+            "id": "para_llm_survey_2024_p21_4",
+            "source_id": "llm_survey_2024",
+            "source": "llm_survey.pdf",
+            "page": 21,
+            "text": "LLM-8-bit [255] uses fullprecision matrix multiplication for weights associated with outlier features and 8-bit for remaining features. The lower precision multiplication outputs are converted to FP-16 and concatenated with others. The quantized models have homogenous\nword embeddings, which may degrade their performance. To\nfix this, token-level knowledge distillation is employed in [45]\nalong with independent quantization scaling factors for each\nmodule due to varying weight distribution. Feature distributions are asymmetric and appear in different channels; outlier\nsuppression [257] shifts and scales per-channel activation distributions for effective quantization.",
+            "metadata": {
+              "document_id": "llm_survey_2024",
+              "source": "llm_survey.pdf",
+              "section": "3. Large Language Models",
+              "strategy": "paragraph",
+              "page": 21,
+              "chunk_size": 674
+            },
+            "score": 0.029910714285714284,
+            "strategy": "hybrid_rrf"
+          },
+          {
+            "id": "para_llm_survey_2024_p22_6",
+            "source_id": "llm_survey_2024",
+            "source": "llm_survey.pdf",
+            "page": 22,
+            "text": "Moreover, BLIP2 [270] proposes a two-stage strategy to pre-train a Querying\nTransformer (Q-Former) for the alignment between vision and\nlanguage modalities: in the first stage, vision-language representation learning is bootstrapped from a frozen visual encoder;\nand in the second stage, a frozen LLM bootstraps vision-tolanguage generative learning for zero-shot image-to-text generation. Similarly, MiniGPT-4 [277] deploys pre-trained and\nfrozen ViT [278], Q-Former and Vicuna LLM [159], only training the linear projection layer for vision and language modalities alignment. Fine-tuning: Derived from instruction tuning [16] for NLP\ntasks [20, 16, 97], researchers are fine-tune pre-trained LLMs\nusing multimodal instructions.",
+            "metadata": {
+              "page": 22,
+              "strategy": "paragraph",
+              "document_id": "llm_survey_2024",
+              "section": "3. Large Language Models",
+              "chunk_size": 729,
+              "source": "llm_survey.pdf"
+            },
+            "score": 0.028381642512077296,
+            "strategy": "hybrid_rrf"
+          },
+          {
+            "id": "para_llm_survey_2024_p8_3",
+            "source_id": "llm_survey_2024",
+            "source": "llm_survey.pdf",
+            "page": 8,
+            "text": "ERNIE 3.0 [110]: ERNIE 3.0 takes inspiration from multitask learning to build a modular architecture using TransformerXL [111] as the backbone. The universal representation module is shared by all the tasks, which serve as the basic block\nfor task-specific representation modules, which are all trained\njointly for natural language understanding, natural language\ngeneration, and knowledge extraction. This LLM is primarily focused on the Chinese language. It claims to train on the\nlargest Chinese text corpora for LLM training, and achieved\nstate-of-the-art in 54 Chinese NLP tasks. Jurassic-1 [112]: A pair of auto-regressive language models, including a 7B-parameter J1-Large model and a 178Bparameter J1-Jumbo model.",
+            "metadata": {
+              "document_id": "llm_survey_2024",
+              "source": "llm_survey.pdf",
+              "page": 8,
+              "chunk_size": 721,
+              "section": "3. Large Language Models",
+              "strategy": "paragraph"
+            },
+            "score": 0.027984344422700584,
+            "strategy": "hybrid_rrf"
+          }
+        ],
+        "context": "[para_llm_survey_2024_p21_6 | llm_survey.pdf | page 21]\nQuantization-Aware Training: To compensate for performance degradation, a quantized model is fine-tuned in\nquantization-aware training (QAT) [260, 261, 262]. Alpha Tuning quantizes the model using binary coding quantization (BCQ) [263] and fine-tunes only quantization scaling factors. This approach improves performance over\n21\n\n[para_llm_survey_2024_p22_0 | llm_survey.pdf | page 22]\nparameter-efficient fine-tuning of the pre-trained model. Similarly, parameter-efficient and quantization-aware adaptation\n(PEQA) [264] reduces the precision of fully-connected layers\nand fine-tunes only quantization scaling parameters. LLMQAT [262] generates training data from the pre-trained network\nand trains a quantized student model with knowledge distillation. QLoRA [261] fine-tunes 4-bit quantized pre-trained LLM\nwith LoRA [250] using a 4-bit normal float, which shows better\nperformance over a 4-bit integer and float. 3.6.3. Pruning\nPruning is an alternative approach to quantization to compress model size, thereby reducing LLMs deployment costs\nsignificantly.\n\n[para_llm_survey_2024_p21_4 | llm_survey.pdf | page 21]\nLLM-8-bit [255] uses fullprecision matrix multiplication for weights associated with outlier features and 8-bit for remaining features. The lower precision multiplication outputs are converted to FP-16 and concatenated with others. The quantized models have homogenous\nword embeddings, which may degrade their performance. To\nfix this, token-level knowledge distillation is employed in [45]\nalong with independent quantization scaling factors for each\nmodule due to varying weight distribution. Feature distributions are asymmetric and appear in different channels; outlier\nsuppression [257] shifts and scales per-channel activation distributions for effective quantization.",
+        "context_ids": [
+          "para_llm_survey_2024_p21_6",
+          "para_llm_survey_2024_p22_0",
+          "para_llm_survey_2024_p21_4"
+        ]
+      },
+      {
+        "event": "answer"
+      }
+    ],
+    "elapsed_ms": 5.097333000094295
+  },
+  {
+    "query_id": "Q23_unanswerable",
+    "split": "test",
+    "question": "What are the specific hyperparameter settings and GPU cluster interconnect topology used to train Anthropic Claude 3.5 Sonnet?",
+    "status": "abstain",
+    "answer": "Kh\u00f4ng \u0111\u1ee7 b\u1eb1ng ch\u1ee9ng \u0111\u1ec3 tr\u1ea3 l\u1eddi.",
+    "citations": [],
+    "events": [
+      {
+        "event": "search",
+        "query": "the specific hyperparameter settings and GPU cluster interconnect topology used to train Anthropic Claude 3.5 Sonnet",
+        "filter": null,
+        "results": [
+          {
+            "id": "para_llm_survey_2024_p9_1",
+            "source_id": "llm_survey_2024",
+            "source": "llm_survey.pdf",
+            "page": 9,
+            "text": "As opposed\nto GPT-3, which uses dense and sparse layers, GPT-NeoX-20B\nuses only dense layers. The hyperparameter tuning at this scale\nis difficult; therefore, the model chooses hyperparameters from\nthe method [6] and interpolates values between 13B and 175B\nmodels for the 20B model. The model training is distributed\namong GPUs using both tensor and pipeline parallelism. x + Attn(LN1(x)) + FF(LN2(x)) (4)\nOPT [14]: It is a clone of GPT-3, developed to open-source\na model that replicates GPT-3 performance. Training of OPT\nemploys dynamic loss scaling [120] and restarts from an earlier\ncheckpoint with a lower learning rate whenever loss divergence\nis observed. Overall, the performance of OPT-175B models is\ncomparable to the GPT3-175B model.",
+            "metadata": {
+              "source": "llm_survey.pdf",
+              "strategy": "paragraph",
+              "section": "3. Large Language Models",
+              "page": 9,
+              "chunk_size": 746,
+              "document_id": "llm_survey_2024"
+            },
+            "score": 0.03149801587301587,
+            "strategy": "hybrid_rrf"
+          },
+          {
+            "id": "para_llm_survey_2024_p35_3",
+            "source_id": "llm_survey_2024",
+            "source": "llm_survey.pdf",
+            "page": 35,
+            "text": "GPUs have played a crucial role in meeting the\nhardware requirements for training LLMs, with the networking\nindustry also evolving to optimize hardware for training\nworkloads. However, the growing size of LLMs, which has\nbeen outpacing hardware progress, makes model inference increasingly costly. Model quantization is a promising approach\nto bridge the widening gap between LLM size and hardware\ncapacity [495]. Although specialized hardware acceleration\nlike GPUs or TPUs can significantly reduce the computational\ncost, making real-time applications more feasible, they may not\nfully resolve all limitations, necessitating further advancements\nin hardware technology.",
+            "metadata": {
+              "section": "8. Conclusion",
+              "document_id": "llm_survey_2024",
+              "strategy": "paragraph",
+              "chunk_size": 671,
+              "source": "llm_survey.pdf",
+              "page": 35
+            },
+            "score": 0.01639344262295082,
+            "strategy": "hybrid_rrf"
+          },
+          {
+            "id": "para_llm_survey_2024_p25_3",
+            "source_id": "llm_survey_2024",
+            "source": "llm_survey.pdf",
+            "page": 25,
+            "text": "All abbreviations are the same as Table 3. Entries in \u201cData/Tokens\u201d starting with \u201cS-\u201d represent the number\nof training samples. Models Publication Venue License Type Model Creators Purpose No. of Params Commercial Use Pre-trained Models Steps Trained Data/ Tokens No. of Processing Units Processing Unit Type Train. Time Calculated Train. Cost Train.",
+            "metadata": {
+              "page": 25,
+              "source": "llm_survey.pdf",
+              "document_id": "llm_survey_2024",
+              "strategy": "paragraph",
+              "section": "5. Datasets and Evaluation",
+              "chunk_size": 351
+            },
+            "score": 0.01639344262295082,
+            "strategy": "hybrid_rrf"
+          },
+          {
+            "id": "para_llm_survey_2024_p24_2",
+            "source_id": "llm_survey_2024",
+            "source": "llm_survey.pdf",
+            "page": 24,
+            "text": "This avoids tuning the\nlearning rate hyperparameter. Training Parallelism: 3D parallelism, a combination of data,\npipeline, and tensor parallelism, is the most utilized training\nparallelism approach in LLMs [33, 15, 14, 13, 117, 115, 112]. In addition to 3D parallelism, BLOOM [13] uses a zero optimizer [37] to shard optimizer states. PanGu-\u03b1 [108] and\nPanGu-\u03a3 [92] go beyond 3D parallelism and apply 5D parallelism which additionally contains optimizer parallelism and\nrematerialization. Mode Switching: It adds task-related tokens at the beginning\nof the text during training. These tokens refer to the natural\nlanguage understanding and natural language generation tasks\nwhich are shown to improve downstream task performance\nin [125, 124, 122].",
+            "metadata": {
+              "chunk_size": 749,
+              "document_id": "llm_survey_2024",
+              "section": "4. Model Configurations",
+              "source": "llm_survey.pdf",
+              "page": 24,
+              "strategy": "paragraph"
+            },
+            "score": 0.016129032258064516,
+            "strategy": "hybrid_rrf"
+          },
+          {
+            "id": "para_llm_survey_2024_p16_5",
+            "source_id": "llm_survey_2024",
+            "source": "llm_survey.pdf",
+            "page": 16,
+            "text": "The instructions are iteratively evolved with re-writing instructions in\ncomplex wording and creating new instructions. With this style\nof automated instruction generation, WizardLM [163] (finetuned LLaMA on 250k instructions), outperforms Vicuna and\nAlpaca, and WizardCoder [164] (fine-tuned StarCoder) beats\nClaude-Plus, Bard, and others. 3.2.3. Aligning with Human Preferences\nIncorporating human preferences into LLMs presents a\nsignificant advantage in mitigating undesirable behaviors and\nensuring accurate outputs. The initial work on alignment, such\nas InstructGPT [20] aligns GPT-3 using a 3-step approach,\ninstruction-tuning, reward modeling, and fine-tuning with\nreinforcement learning (RL).",
+            "metadata": {
+              "document_id": "llm_survey_2024",
+              "source": "llm_survey.pdf",
+              "chunk_size": 702,
+              "section": "3. Large Language Models",
+              "page": 16,
+              "strategy": "paragraph"
+            },
+            "score": 0.016129032258064516,
+            "strategy": "hybrid_rrf"
+          }
+        ],
+        "context": "[para_llm_survey_2024_p9_1 | llm_survey.pdf | page 9]\nAs opposed\nto GPT-3, which uses dense and sparse layers, GPT-NeoX-20B\nuses only dense layers. The hyperparameter tuning at this scale\nis difficult; therefore, the model chooses hyperparameters from\nthe method [6] and interpolates values between 13B and 175B\nmodels for the 20B model. The model training is distributed\namong GPUs using both tensor and pipeline parallelism. x + Attn(LN1(x)) + FF(LN2(x)) (4)\nOPT [14]: It is a clone of GPT-3, developed to open-source\na model that replicates GPT-3 performance. Training of OPT\nemploys dynamic loss scaling [120] and restarts from an earlier\ncheckpoint with a lower learning rate whenever loss divergence\nis observed. Overall, the performance of OPT-175B models is\ncomparable to the GPT3-175B model.\n\n[para_llm_survey_2024_p35_3 | llm_survey.pdf | page 35]\nGPUs have played a crucial role in meeting the\nhardware requirements for training LLMs, with the networking\nindustry also evolving to optimize hardware for training\nworkloads. However, the growing size of LLMs, which has\nbeen outpacing hardware progress, makes model inference increasingly costly. Model quantization is a promising approach\nto bridge the widening gap between LLM size and hardware\ncapacity [495]. Although specialized hardware acceleration\nlike GPUs or TPUs can significantly reduce the computational\ncost, making real-time applications more feasible, they may not\nfully resolve all limitations, necessitating further advancements\nin hardware technology.\n\n[para_llm_survey_2024_p25_3 | llm_survey.pdf | page 25]\nAll abbreviations are the same as Table 3. Entries in \u201cData/Tokens\u201d starting with \u201cS-\u201d represent the number\nof training samples. Models Publication Venue License Type Model Creators Purpose No. of Params Commercial Use Pre-trained Models Steps Trained Data/ Tokens No. of Processing Units Processing Unit Type Train. Time Calculated Train. Cost Train.",
+        "context_ids": [
+          "para_llm_survey_2024_p9_1",
+          "para_llm_survey_2024_p35_3",
+          "para_llm_survey_2024_p25_3"
+        ]
+      },
+      {
+        "event": "invalid_or_missing_citations"
+      }
+    ],
+    "elapsed_ms": 8.600500000056854
+  },
+  {
+    "query_id": "Q24_unanswerable",
+    "split": "test",
+    "question": "What is the precise step-by-step chemical synthesis formula used to manufacture the semiconductor cooling liquid for NVIDIA B200 GPUs?",
+    "status": "abstain",
+    "answer": "Kh\u00f4ng \u0111\u1ee7 b\u1eb1ng ch\u1ee9ng \u0111\u1ec3 tr\u1ea3 l\u1eddi.",
+    "citations": [],
+    "events": [
+      {
+        "event": "search",
+        "query": "the precise step-by-step chemical synthesis formula used to manufacture the semiconductor cooling liquid for NVIDIA B200 GPUs",
+        "filter": null,
+        "results": [
+          {
+            "id": "para_llm_survey_2024_p35_3",
+            "source_id": "llm_survey_2024",
+            "source": "llm_survey.pdf",
+            "page": 35,
+            "text": "GPUs have played a crucial role in meeting the\nhardware requirements for training LLMs, with the networking\nindustry also evolving to optimize hardware for training\nworkloads. However, the growing size of LLMs, which has\nbeen outpacing hardware progress, makes model inference increasingly costly. Model quantization is a promising approach\nto bridge the widening gap between LLM size and hardware\ncapacity [495]. Although specialized hardware acceleration\nlike GPUs or TPUs can significantly reduce the computational\ncost, making real-time applications more feasible, they may not\nfully resolve all limitations, necessitating further advancements\nin hardware technology.",
+            "metadata": {
+              "document_id": "llm_survey_2024",
+              "strategy": "paragraph",
+              "source": "llm_survey.pdf",
+              "chunk_size": 671,
+              "page": 35,
+              "section": "8. Conclusion"
+            },
+            "score": 0.030330882352941176,
+            "strategy": "hybrid_rrf"
+          },
+          {
+            "id": "para_llm_survey_2024_p9_0",
+            "source_id": "llm_survey_2024",
+            "source": "llm_survey.pdf",
+            "page": 9,
+            "text": "It introduces additional self-supervised adversarial and controllable language modeling losses to the pre-training step, which\nenables ERNIE 3.0 Titan to beat other LLMs in their manually\nselected Factual QA task set evaluations. GPT-NeoX-20B [118]: An auto-regressive model that largely\nfollows GPT-3 with a few deviations in architecture design,\ntrained on the Pile dataset without any data deduplication. GPTNeoX has parallel attention and feed-forward layers in a transformer block, given in Eq. 4, that increases throughput by 15%. It uses rotary positional embedding [66], applying it to only\n25% of embedding vector dimension as in [119]. This reduces\nthe computation without performance degradation.",
+            "metadata": {
+              "strategy": "paragraph",
+              "page": 9,
+              "chunk_size": 707,
+              "section": "3. Large Language Models",
+              "document_id": "llm_survey_2024",
+              "source": "llm_survey.pdf"
+            },
+            "score": 0.02857142857142857,
+            "strategy": "hybrid_rrf"
+          },
+          {
+            "id": "para_llm_survey_2024_p4_3",
+            "source_id": "llm_survey_2024",
+            "source": "llm_survey.pdf",
+            "page": 4,
+            "text": "Cross Attention: It is used in encoder-decoder architectures,\nwhere encoder outputs are the queries, and key-value pairs\ncome from the decoder. Sparse Attention [67]: Self-attention has O(n2) time complexity which becomes infeasible for large sequences. To speed\nup the computation, sparse attention [67] iteratively calculates\nattention in sliding windows for speed gains. Flash Attention [68]: Memory access is the major bottleneck\nin calculating attention using GPUs. To speed up, flash\nattention employs input tiling to minimize the memory reads\nand writes between the GPU high bandwidth memory (HBM)\nand the on-chip SRAM. 2.4. Activation Functions\nThe activation functions serve a crucial role in the curvefitting abilities of neural networks [69].",
+            "metadata": {
+              "document_id": "llm_survey_2024",
+              "chunk_size": 753,
+              "strategy": "paragraph",
+              "source": "llm_survey.pdf",
+              "section": "2. Background",
+              "page": 4
+            },
+            "score": 0.027222222222222224,
+            "strategy": "hybrid_rrf"
+          },
+          {
+            "id": "para_llm_survey_2024_p27_1",
+            "source_id": "llm_survey_2024",
+            "source": "llm_survey.pdf",
+            "page": 27,
+            "text": "Sequence LR Optimizers Precision Weight Grad\nModels Batch Size Length LR Warmup Decay AdaFactorAdam AdamWFP16 BF16 Mixed Decay Clip Dropout\nT5 (11B) 211 512 0.01 \u00d7 inverse square root \u2713 - - - - - \u2713\nGPT3 (175B) 32K - 6e-5 \u2713 cosine \u2713 \u2713 \u2713 \u2713 -\nmT5 (13B) 1024 1024 0.01 - inverse square root \u2713 - - - - - \u2713\nPanGu-\u03b1 (200B) - 1024 2e-5 - - - - - - \u2713 - - - -\nCPM-2 (198B) 1024 1024 0.001 - - \u2713 - - - - - \u2713\nCodex (12B) - - 6e-5 \u2713 cosine \u2713 \u2713 \u2713 - -\nERNIE 3.0 (12B) 6144 512 1e-4 \u2713 linear \u2713 - - - \u2713 - -\nJurassic-1 (178B) 3.2M 2048 6e-5 \u2713 cosine \u2713 \u2713 \u2713 \u2713 -\nHyperCLOVA (82B) 1024 - 6e-5 - cosine \u2713 - - - \u2713 - -\nYuan 1.0 (245B) <10M 2048 1.6e-4 \u2713 cosine decay to 10% \u2713 - - - \u2713 - -\nGopher (280B) 3M 2048 4e-5 \u2713 cosine decay to 10% \u2713 \u2713 - \u2713 -\nERNIE 3.0 Titan (260B) - 512 1e-4 \u2713 linear \u2713 \u2713 \u2713 \u2713 -\nGPT-NeoX-20B 1538 2048 0.97e-5 \u2713 cosine \u2713 \u2713 \u2713 \u2713 \u00d7\nOPT (175B) 2M 2048 1.2e-4 - linear \u2713 \u2713 \u2713 \u2713 \u2713\nBLOOM (176B) 2048 2048 6e-5 \u2713 cosine \u2713 \u2713 \u2713 \u2713 \u00d7\nGalactica (120B) 2M 2048 7e-6 \u2713 linear decay to 10% \u2713 - - - \u2713 \u2713 \u2713\nGLaM (1.2T) 1M 1024 0.01 - inverse square root \u2713 FP32 + \u2713 - \u2713 \u00d7\nLaMDA (137B) 256K - - - - - - - - - - - - -\nMT-NLG (530B) 1920 2048 5e-5 \u2713 cosine decay to 10% \u2713 \u2713 \u2713 \u2713 -\nAlphaCode (41B) 2048 1536+768 1e-4 \u2713 cosine decay to 10% \u2713 \u2713 \u2713 \u2713 -\nChinchilla (70B) 1.5M 2048 1e-4 \u2713 cosine decay to 10% \u2713 \u2713 - - -\nPaLM (540B) 2048 2048 0.01 - inverse square root \u2713 - - - \u2713 \u2713 \u00d7\nAlexaTM (20B) 2M 1024 1e-4 - linear decay to 5% \u2713 \u2713 \u2713 - \u2713\nU-PaLM (540B) 32 2048 1e-4 - cosine \u2713 - - - - - -\nUL2 (20B) 1024 1024 - - inverse square root - - - - - - \u00d7 - -\nGLM (130B) 4224 2048 8e-5 \u2713 cosine \u2713 \u2713 \u2713 \u2713 \u2713\nCodeGen (16B) 2M 2048 5e-5 \u2713 cosine \u2713 - - - \u2713 \u2713 -\nLLaMA (65B) 4M Tokens 2048 1.5e-4 \u2713 cosine decay to 10% \u2713 - - - \u2713 \u2713 -\nPanGu-\u03a3 (1.085T) 512 1024 2e-5 \u2713 - \u2713 \u2713 - - -\nBloombergGPT (50B) 2048 2048 6e-5 \u2713 cosine \u2713 \u2713 \u2713 \u2713 \u00d7\nXuan Yuan 2.0 (176B) 2048 2048 6e-5 \u2713 cosine \u2713 \u2713 \u2713 \u2713 -\nCodeT5+ (16B) 2048 1024 2e-4 - linear \u2713 \u2713 \u2713 - -\nStarCoder (15.5B) 512 8k 3e-4 \u2713 cosine \u2713 \u2713 \u2713 - -\nLLaMA-2 (70B) 4M Tokens 4k 1.5e-4 \u2713 cosine \u2713 \u2713 \u2713 \u2713 -\nLLaMA-3.1 (405B) 16M 8192 8e-5 \u2713 linear+cosine \u2713 \u2713 - - -\nNemotron-4 (340B) 2304 4096 - - linear - - - \u2713 - - \u00d7\nDeepSeek (67B) 4608 4096 3.2e-4 \u2713 cosine \u2713 \u2713 \u2713 \u2713 -\nDeepSeek-v2 (67B) 9216 4k 2.4e-4 \u2713 step-decay \u2713 - - - \u2713 \u2713 -\nTable 7: Summary of optimization settings used for instruction-tuned LLMs.",
+            "metadata": {
+              "page": 27,
+              "section": "5. Datasets and Evaluation",
+              "strategy": "paragraph",
+              "source": "llm_survey.pdf",
+              "chunk_size": 2279,
+              "document_id": "llm_survey_2024"
+            },
+            "score": 0.01639344262295082,
+            "strategy": "hybrid_rrf"
+          },
+          {
+            "id": "para_llm_survey_2024_p11_0",
+            "source_id": "llm_survey_2024",
+            "source": "llm_survey.pdf",
+            "page": 11,
+            "text": "3.1.2. Coding\nCodeGen [140]: CodeGen has a similar architecture to\nPaLM [15], i.e., parallel attention, MLP layers, and RoPE embeddings. The model is trained on both natural language and\nprogramming language data sequentially (trained on the first\ndataset, then the second, and so on) on the following datasets\n1) PILE, 2) BIGQUERY, and 3) BIGPYTHON. CodeGen proposed a multi-step approach to synthesizing code. The purpose\nis to simplify the generation of long sequences where the previous prompt and generated code are given as input with the next\nprompt to generate the next code sequence. CodeGen opensource a Multi-Turn Programming Benchmark (MTPB) to evaluate multi-step program synthesis.",
+            "metadata": {
+              "strategy": "paragraph",
+              "source": "llm_survey.pdf",
+              "chunk_size": 695,
+              "section": "3. Large Language Models",
+              "page": 11,
+              "document_id": "llm_survey_2024"
+            },
+            "score": 0.01639344262295082,
+            "strategy": "hybrid_rrf"
+          }
+        ],
+        "context": "[para_llm_survey_2024_p35_3 | llm_survey.pdf | page 35]\nGPUs have played a crucial role in meeting the\nhardware requirements for training LLMs, with the networking\nindustry also evolving to optimize hardware for training\nworkloads. However, the growing size of LLMs, which has\nbeen outpacing hardware progress, makes model inference increasingly costly. Model quantization is a promising approach\nto bridge the widening gap between LLM size and hardware\ncapacity [495]. Although specialized hardware acceleration\nlike GPUs or TPUs can significantly reduce the computational\ncost, making real-time applications more feasible, they may not\nfully resolve all limitations, necessitating further advancements\nin hardware technology.\n\n[para_llm_survey_2024_p9_0 | llm_survey.pdf | page 9]\nIt introduces additional self-supervised adversarial and controllable language modeling losses to the pre-training step, which\nenables ERNIE 3.0 Titan to beat other LLMs in their manually\nselected Factual QA task set evaluations. GPT-NeoX-20B [118]: An auto-regressive model that largely\nfollows GPT-3 with a few deviations in architecture design,\ntrained on the Pile dataset without any data deduplication. GPTNeoX has parallel attention and feed-forward layers in a transformer block, given in Eq. 4, that increases throughput by 15%. It uses rotary positional embedding [66], applying it to only\n25% of embedding vector dimension as in [119]. This reduces\nthe computation without performance degradation.\n\n[para_llm_survey_2024_p4_3 | llm_survey.pdf | page 4]\nCross Attention: It is used in encoder-decoder architectures,\nwhere encoder outputs are the queries, and key-value pairs\ncome from the decoder. Sparse Attention [67]: Self-attention has O(n2) time complexity which becomes infeasible for large sequences. To speed\nup the computation, sparse attention [67] iteratively calculates\nattention in sliding windows for speed gains. Flash Attention [68]: Memory access is the major bottleneck\nin calculating attention using GPUs. To speed up, flash\nattention employs input tiling to minimize the memory reads\nand writes between the GPU high bandwidth memory (HBM)\nand the on-chip SRAM. 2.4. Activation Functions\nThe activation functions serve a crucial role in the curvefitting abilities of neural networks [69].",
+        "context_ids": [
+          "para_llm_survey_2024_p35_3",
+          "para_llm_survey_2024_p9_0",
+          "para_llm_survey_2024_p4_3"
+        ]
+      },
+      {
+        "event": "invalid_or_missing_citations"
+      }
+    ],
+    "elapsed_ms": 8.881040999995093
+  }
+]

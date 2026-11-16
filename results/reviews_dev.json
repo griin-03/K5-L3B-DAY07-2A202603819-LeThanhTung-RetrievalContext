@@ -1,0 +1,134 @@
+[
+  {
+    "query_id": "Q01",
+    "answer_grade": 2,
+    "citation_support": [
+      true
+    ],
+    "review_note": "Citations match gold: [True], Context evidence hit: True"
+  },
+  {
+    "query_id": "Q02",
+    "answer_grade": 2,
+    "citation_support": [
+      true
+    ],
+    "review_note": "Citations match gold: [True], Context evidence hit: True"
+  },
+  {
+    "query_id": "Q03",
+    "answer_grade": 1,
+    "citation_support": [
+      false
+    ],
+    "review_note": "Citations match gold: [False], Context evidence hit: True"
+  },
+  {
+    "query_id": "Q04",
+    "answer_grade": 2,
+    "citation_support": [
+      true
+    ],
+    "review_note": "Citations match gold: [True], Context evidence hit: True"
+  },
+  {
+    "query_id": "Q05",
+    "answer_grade": 2,
+    "citation_support": [
+      true
+    ],
+    "review_note": "Citations match gold: [True], Context evidence hit: True"
+  },
+  {
+    "query_id": "Q06",
+    "answer_grade": 0,
+    "citation_support": [
+      false
+    ],
+    "review_note": "Citations match gold: [False], Context evidence hit: False"
+  },
+  {
+    "query_id": "Q07",
+    "answer_grade": 2,
+    "citation_support": [
+      true
+    ],
+    "review_note": "Citations match gold: [True], Context evidence hit: True"
+  },
+  {
+    "query_id": "Q08",
+    "answer_grade": 1,
+    "citation_support": [
+      false
+    ],
+    "review_note": "Citations match gold: [False], Context evidence hit: True"
+  },
+  {
+    "query_id": "Q09",
+    "answer_grade": 2,
+    "citation_support": [
+      true
+    ],
+    "review_note": "Citations match gold: [True], Context evidence hit: True"
+  },
+  {
+    "query_id": "Q10",
+    "answer_grade": 2,
+    "citation_support": [
+      true
+    ],
+    "review_note": "Citations match gold: [True], Context evidence hit: True"
+  },
+  {
+    "query_id": "Q11",
+    "answer_grade": 0,
+    "citation_support": [
+      false
+    ],
+    "review_note": "Citations match gold: [False], Context evidence hit: False"
+  },
+  {
+    "query_id": "Q12",
+    "answer_grade": 2,
+    "citation_support": [
+      true
+    ],
+    "review_note": "Citations match gold: [True], Context evidence hit: True"
+  },
+  {
+    "query_id": "Q13",
+    "answer_grade": 2,
+    "citation_support": [
+      true
+    ],
+    "review_note": "Citations match gold: [True], Context evidence hit: True"
+  },
+  {
+    "query_id": "Q14",
+    "answer_grade": 2,
+    "citation_support": [
+      true
+    ],
+    "review_note": "Citations match gold: [True], Context evidence hit: True"
+  },
+  {
+    "query_id": "Q15",
+    "answer_grade": 2,
+    "citation_support": [
+      true
+    ],
+    "review_note": "Citations match gold: [True], Context evidence hit: True"
+  },
+  {
+    "query_id": "Q21_unanswerable",
+    "abstention_correct": true,
+    "citation_support": [],
+    "review_note": "Correctly abstained on out-of-domain unanswerable query."
+  },
+  {
+    "query_id": "Q22_unanswerable",
+    "abstention_correct": true,
+    "citation_support": [],
+    "review_note": "Correctly abstained on out-of-domain unanswerable query."
+  }
+]

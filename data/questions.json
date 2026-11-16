@@ -1,0 +1,299 @@
+[
+  {
+    "id": "Q01",
+    "split": "dev",
+    "question": "What is tokenization and what are its common token units in LLM training?",
+    "expected_answer": "Tokenization is an essential pre-processing step that parses text into non-decomposing units called tokens, which can be characters, subwords, symbols, or words.",
+    "gold": [
+      {
+        "source_id": "llm_survey_2024",
+        "page": 4,
+        "evidence": "Tokenization [59] is an essential pre-processing step in\nLLM training that parses the text into non-decomposing units\ncalled tokens. Tokens can be characters, subwords [60], symbols [61], or words"
+      }
+    ]
+  },
+  {
+    "id": "Q02",
+    "split": "dev",
+    "question": "How does the Alibi positional embedding scheme work?",
+    "expected_answer": "Alibi subtracts a scalar bias from the attention score that increases with the distance between token positions, favoring recent tokens.",
+    "gold": [
+      {
+        "source_id": "llm_survey_2024",
+        "page": 4,
+        "evidence": "Alibi [65]: It subtracts a scalar bias from the attention score\nthat increases with the distance between token positions. This\nfavors using recent tokens for attention."
+      }
+    ]
+  },
+  {
+    "id": "Q03",
+    "split": "dev",
+    "question": "How does Rotary Position Embedding (RoPE) encode relative position?",
+    "expected_answer": "RoPE rotates query and key representations at an angle proportional to the token absolute position in the input sequence.",
+    "gold": [
+      {
+        "source_id": "llm_survey_2024",
+        "page": 4,
+        "evidence": "RoPE [66]: It rotates query and key representations at an angle proportional to the token absolute position in the input\nsequence, resulting in a relative positional encoding scheme"
+      }
+    ]
+  },
+  {
+    "id": "Q04",
+    "split": "dev",
+    "question": "What is the primary capability provided by the Transformers library in LLM workflows?",
+    "expected_answer": "It provides access to various pre-trained transformer models with APIs to train, fine-tune, infer, and develop custom models.",
+    "gold": [
+      {
+        "source_id": "llm_survey_2024",
+        "page": 5,
+        "evidence": "Transformers [82]: The library provides access to various pretrained transformer models with APIs to train, fine-tune, infer,\nand develop custom models."
+      }
+    ],
+    "filter": {
+      "section": "2. Background"
+    }
+  },
+  {
+    "id": "Q05",
+    "split": "dev",
+    "question": "What is the core functionality of Microsoft's DeepSpeed library?",
+    "expected_answer": "DeepSpeed is a library for scalable distributed training and inference of deep learning models.",
+    "gold": [
+      {
+        "source_id": "llm_survey_2024",
+        "page": 5,
+        "evidence": "DeepSpeed [36]: A library for scalable distributed training and\ninference of deep learning models."
+      }
+    ],
+    "filter": {
+      "section": "2. Background"
+    }
+  },
+  {
+    "id": "Q06",
+    "split": "dev",
+    "question": "What role does Megatron-LM serve in large language model development?",
+    "expected_answer": "Megatron-LM provides GPU-optimized techniques for large-scale training of LLMs.",
+    "gold": [
+      {
+        "source_id": "llm_survey_2024",
+        "page": 5,
+        "evidence": "Megatron-LM [80]: It provides GPU-optimized techniques for\nlarge-scale training of LLMs."
+      }
+    ]
+  },
+  {
+    "id": "Q07",
+    "split": "dev",
+    "question": "What distinguishes the JAX library in the context of machine learning and numerical computing?",
+    "expected_answer": "JAX is a Python library for high-performance numerical computing and scalable machine learning that can differentiate native Python and NumPy functions and run them on GPUs.",
+    "gold": [
+      {
+        "source_id": "llm_survey_2024",
+        "page": 5,
+        "evidence": "JAX [83]: A Python library for high-performance numerical\ncomputing and scaleable machine learning. It can differentiate native Python and NumPy functions and execute them on\nGPUs."
+      }
+    ]
+  },
+  {
+    "id": "Q08",
+    "split": "dev",
+    "question": "What is the process of instruction-tuning for LLMs?",
+    "expected_answer": "Instruction-tuning fine-tunes a pre-trained model on instruction formatted data (instruction and input-output pairs) to effectively respond to user queries.",
+    "gold": [
+      {
+        "source_id": "llm_survey_2024",
+        "page": 7,
+        "evidence": "Instruction-tuning: To enable a model to respond to user\nqueries effectively, the pre-trained model is fine-tuned on instruction formatted data i.e., instruction and an input-output\npair."
+      }
+    ]
+  },
+  {
+    "id": "Q09",
+    "split": "dev",
+    "question": "What is the architecture and pre-training objective of UL2?",
+    "expected_answer": "UL2 is an encoder-decoder architecture trained using a mixture of denoisers (MoD) objective including R-Denoiser, S-Denoiser, and X-Denoiser.",
+    "gold": [
+      {
+        "source_id": "llm_survey_2024",
+        "page": 10,
+        "evidence": "UL2 [125]: An encoder-decoder architecture trained using a\nmixture of denoisers (MoD) objective. Denoisers include 1)\nR-Denoiser: a regular span masking, 2) S-Denoiser: which corrupts consecutive tokens of a large sequence and 3) X-Denoiser:\nwhich corrupts a large number of tokens randomly."
+      }
+    ]
+  },
+  {
+    "id": "Q10",
+    "split": "dev",
+    "question": "What architecture does CodeGen share with PaLM?",
+    "expected_answer": "CodeGen has a similar architecture to PaLM featuring parallel attention, MLP layers, and RoPE embeddings.",
+    "gold": [
+      {
+        "source_id": "llm_survey_2024",
+        "page": 11,
+        "evidence": "CodeGen [140]: CodeGen has a similar architecture to\nPaLM [15], i.e., parallel attention, MLP layers, and RoPE embeddings."
+      }
+    ]
+  },
+  {
+    "id": "Q11",
+    "split": "dev",
+    "question": "What benefit does aligning an LLM with supported evidence provide?",
+    "expected_answer": "It allows the model to generate responses with proofs and facts, reduces hallucination, and increases human trust in the model output.",
+    "gold": [
+      {
+        "source_id": "llm_survey_2024",
+        "page": 17,
+        "evidence": "Aligning with Supported Evidence: This style of alignment\nallows the model to generate responses with proofs and facts,\nreduces hallucination, and assists humans more effectively,\nwhich increases trust in the model\u2019s output."
+      }
+    ]
+  },
+  {
+    "id": "Q12",
+    "split": "dev",
+    "question": "How does PEQA adapt pre-trained models efficiently?",
+    "expected_answer": "PEQA reduces the precision of fully-connected layers and fine-tunes only the quantization scaling parameters.",
+    "gold": [
+      {
+        "source_id": "llm_survey_2024",
+        "page": 22,
+        "evidence": "PEQA) [264] reduces the precision of fully-connected layers\nand fine-tunes only quantization scaling parameters."
+      }
+    ]
+  },
+  {
+    "id": "Q13",
+    "split": "dev",
+    "question": "How does QLoRA achieve 4-bit fine-tuning of LLMs?",
+    "expected_answer": "QLoRA fine-tunes 4-bit quantized pre-trained LLMs with LoRA using a 4-bit normal float data type.",
+    "gold": [
+      {
+        "source_id": "llm_survey_2024",
+        "page": 22,
+        "evidence": "QLoRA [261] fine-tunes 4-bit quantized pre-trained LLM\nwith LoRA [250] using a 4-bit normal float, which shows better\nperformance over a 4-bit integer and float."
+      }
+    ]
+  },
+  {
+    "id": "Q14",
+    "split": "dev",
+    "question": "What is pruning as an alternative approach to model quantization?",
+    "expected_answer": "Pruning removes redundant or non-critical connections or weights to compress model size and reduce deployment costs.",
+    "gold": [
+      {
+        "source_id": "llm_survey_2024",
+        "page": 22,
+        "evidence": "Pruning is an alternative approach to quantization to compress model size, thereby reducing LLMs deployment costs"
+      }
+    ]
+  },
+  {
+    "id": "Q15",
+    "split": "dev",
+    "question": "What techniques are suggested to mitigate training instability and divergence in large models?",
+    "expected_answer": "Techniques include restarting training from an earlier checkpoint, skipping 200-500 earlier data batches at divergence, and re-shuffling batches.",
+    "gold": [
+      {
+        "source_id": "llm_survey_2024",
+        "page": 24,
+        "evidence": "To mitigate\nthis problem, many approaches suggest restarting training from\nan earlier checkpoint [15, 33, 91], skipping 200-500 earlier\ndata batches at the point of divergence in [15] and re-shuffling\nbatches in [91]."
+      }
+    ]
+  },
+  {
+    "id": "Q16",
+    "split": "test",
+    "question": "What is the PAWS dataset designed to evaluate in multilingual NLP?",
+    "expected_answer": "PAWS is designed to evaluate the performance of cross-lingual paraphrase identification models across examples in seven languages.",
+    "gold": [
+      {
+        "source_id": "llm_survey_2024",
+        "page": 32,
+        "evidence": "PAWS [430] dataset for paraphrase identification. It includes\nexamples in seven languages and is designed to evaluate the\nperformance of cross-lingual paraphrase identification models."
+      }
+    ],
+    "filter": {
+      "section": "5. Datasets and Evaluation"
+    }
+  },
+  {
+    "id": "Q17",
+    "split": "test",
+    "question": "What specific capability does the Truthful-QA benchmark measure?",
+    "expected_answer": "It measures a language model's truthfulness when generating answers to questions.",
+    "gold": [
+      {
+        "source_id": "llm_survey_2024",
+        "page": 32,
+        "evidence": "Truthful-QA [405]: A unique benchmark that measures a\nlanguage model\u2019s truthfulness when generating answers. The\ndataset includes questions"
+      }
+    ]
+  },
+  {
+    "id": "Q18",
+    "split": "test",
+    "question": "Why is research focusing on making LLMs more explainable?",
+    "expected_answer": "To promote user trust and ensure responsible AI usage, especially in sensitive domains.",
+    "gold": [
+      {
+        "source_id": "llm_survey_2024",
+        "page": 35,
+        "evidence": "Efforts are being\nmade to make LLMs more explainable to promote user trust\nand to ensure responsible AI usage."
+      }
+    ]
+  },
+  {
+    "id": "Q19",
+    "split": "test",
+    "question": "Which tokenization schemes are commonly used in modern large language models?",
+    "expected_answer": "Commonly used tokenization schemes include wordpiece, byte pair encoding (BPE), and unigramLM.",
+    "gold": [
+      {
+        "source_id": "llm_survey_2024",
+        "page": 4,
+        "evidence": "Some of the commonly used tokenization schemes in LLMs\ninclude wordpiece [62], byte pair encoding (BPE) [61], and unigramLM [60]."
+      }
+    ]
+  },
+  {
+    "id": "Q20",
+    "split": "test",
+    "question": "How does LLM-QAT train quantized student models?",
+    "expected_answer": "LLM-QAT generates training data from the pre-trained network and trains a quantized student model using knowledge distillation.",
+    "gold": [
+      {
+        "source_id": "llm_survey_2024",
+        "page": 22,
+        "evidence": "LLMQAT [262] generates training data from the pre-trained network\nand trains a quantized student model with knowledge distillation."
+      }
+    ]
+  },
+  {
+    "id": "Q21_unanswerable",
+    "split": "dev",
+    "question": "What is the exact financial revenue generated by OpenAI from ChatGPT Plus subscriptions in 2024?",
+    "expected_answer": "Kh\u00f4ng \u0111\u1ee7 b\u1eb1ng ch\u1ee9ng \u0111\u1ec3 tr\u1ea3 l\u1eddi. T\u00e0i li\u1ec7u l\u00e0 b\u00e0i kh\u1ea3o s\u00e1t ki\u1ebfn tr\u00fac k\u1ef9 thu\u1eadt c\u1ee7a LLMs v\u00e0 kh\u00f4ng ch\u1ee9a s\u1ed1 li\u1ec7u b\u00e1o c\u00e1o t\u00e0i ch\u00ednh doanh thu th\u01b0\u01a1ng m\u1ea1i c\u1ee7a OpenAI.",
+    "gold": []
+  },
+  {
+    "id": "Q22_unanswerable",
+    "split": "dev",
+    "question": "How does Apple Private Cloud Compute implement custom hardware secure enclaves for iOS 18 Siri inference?",
+    "expected_answer": "Kh\u00f4ng \u0111\u1ee7 b\u1eb1ng ch\u1ee9ng \u0111\u1ec3 tr\u1ea3 l\u1eddi. T\u00e0i li\u1ec7u kh\u1ea3o s\u00e1t LLMs c\u00f4ng b\u1ed1 n\u0103m 2023-2024 kh\u00f4ng ch\u1ee9a th\u00f4ng tin v\u1ec1 ki\u1ebfn tr\u00fac ph\u1ea7n c\u1ee9ng Private Cloud Compute c\u1ee7a Apple.",
+    "gold": []
+  },
+  {
+    "id": "Q23_unanswerable",
+    "split": "test",
+    "question": "What are the specific hyperparameter settings and GPU cluster interconnect topology used to train Anthropic Claude 3.5 Sonnet?",
+    "expected_answer": "Kh\u00f4ng \u0111\u1ee7 b\u1eb1ng ch\u1ee9ng \u0111\u1ec3 tr\u1ea3 l\u1eddi. B\u00e1o c\u00e1o kh\u00f4ng ch\u1ee9a th\u00f4ng tin v\u1ec1 si\u00eau tham s\u1ed1 c\u1ea5u h\u00ecnh hay h\u1ea1 t\u1ea7ng m\u1ea1ng c\u1ee5m GPU \u0111\u1ed9c quy\u1ec1n c\u1ee7a Claude 3.5 Sonnet.",
+    "gold": []
+  },
+  {
+    "id": "Q24_unanswerable",
+    "split": "test",
+    "question": "What is the precise step-by-step chemical synthesis formula used to manufacture the semiconductor cooling liquid for NVIDIA B200 GPUs?",
+    "expected_answer": "Kh\u00f4ng \u0111\u1ee7 b\u1eb1ng ch\u1ee9ng \u0111\u1ec3 tr\u1ea3 l\u1eddi. T\u00e0i li\u1ec7u l\u00e0 t\u1ed5ng quan l\u00fd thuy\u1ebft v\u1ec1 m\u00f4 h\u00ecnh ng\u00f4n ng\u1eef l\u1edbn, ho\u00e0n to\u00e0n n\u1eb1m ngo\u00e0i ch\u1ee7 \u0111\u1ec1 c\u00f4ng th\u1ee9c h\u00f3a h\u1ecdc t\u1ed5ng h\u1ee3p ch\u1ea5t l\u1ecfng t\u1ea3n nhi\u1ec7t ph\u1ea7n c\u1ee9ng.",
+    "gold": []
+  }
+]

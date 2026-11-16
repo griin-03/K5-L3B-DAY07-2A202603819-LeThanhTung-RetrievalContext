@@ -1,0 +1,44 @@
+[
+  {
+    "query_id": "Q16",
+    "answer_grade": 2,
+    "citation_support": [true],
+    "review_note": "Cites chunk para_llm_survey_2024_p32_0 containing the exact gold evidence for PAWS dataset cross-lingual paraphrase identification. Grounding is completely supported."
+  },
+  {
+    "query_id": "Q17",
+    "answer_grade": 0,
+    "citation_support": [false],
+    "review_note": "Cites general language understanding benchmark chunk p26_5 rather than the Truthful-QA definition chunk p32_0. Evidence is insufficient."
+  },
+  {
+    "query_id": "Q18",
+    "answer_grade": 1,
+    "citation_support": [false],
+    "review_note": "Cites chunk p33_4 discussing LLM explanations in legal domain analysis instead of the Section 8 explainability definition on p35. Grounding is partially relevant to explainability but misses primary gold citation."
+  },
+  {
+    "query_id": "Q19",
+    "answer_grade": 2,
+    "citation_support": [true],
+    "review_note": "Accurately cites chunk para_llm_survey_2024_p4_0 containing tokenization schemes (wordpiece, BPE, unigramLM). Full evidence present and supported."
+  },
+  {
+    "query_id": "Q20",
+    "answer_grade": 2,
+    "citation_support": [true],
+    "review_note": "Accurately cites chunk para_llm_survey_2024_p22_0 containing LLM-QAT knowledge distillation quantization. Full evidence present and supported."
+  },
+  {
+    "query_id": "Q23_unanswerable",
+    "abstention_correct": true,
+    "citation_support": [],
+    "review_note": "Agent correctly abstained with no citations for out-of-domain Claude 3.5 GPU hyperparameter query."
+  },
+  {
+    "query_id": "Q24_unanswerable",
+    "abstention_correct": true,
+    "citation_support": [],
+    "review_note": "Agent correctly abstained with no citations for chemical synthesis cooling liquid query."
+  }
+]
